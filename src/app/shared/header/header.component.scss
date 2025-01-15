@@ -1,0 +1,65 @@
+
+
+@mixin borderStyle($bStyle) {
+    border: 2px $bStyle white;
+    border-radius: 10px;
+}
+
+@mixin dFlex($jc: center, $ai: center, $g: 0px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+nav {
+    font-family: "Bricolage Grotesque";
+    width: 1440px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 72px;
+    padding-right: 72px;
+    @include dFlex($jc: space-between, $g: 0px);
+    >img {
+        width: 64px;
+        height: 64px;
+    }
+    >div {
+        @include dFlex($jc: space-between, $g: 0px);
+        width: 100%;
+        height: Hug (42px)px;
+        opacity: 0px;
+
+        display: flex;
+        >a {
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 24px;
+}
+
+.phone_btn {
+    display: flex;
+    align-items: center;
+    @include borderStyle(solid);
+    background-color: #9f0908;
+    padding: 8px;
+    margin-left: 16px;
+    >img{
+        width: 32px;
+        height: 32px;
+    }
+    >a {
+        &:hover {
+            color: red;
+        }
+    }
+}
