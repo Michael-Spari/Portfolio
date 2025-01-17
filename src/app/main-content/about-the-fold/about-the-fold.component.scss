@@ -1,11 +1,81 @@
+@import './../../../styles.scss';
 section {
     height: 100vh;
     width: 100%;
     background-image: url('./../../../assets/img/backgrounds/01_Hero.png');
     background-size: cover;
-    // background-position: 50% 50%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container {
+    @include dFlex($jc: space-between, $ai: space-between, $g: 24px);
+    border: 1px solid red;
+    flex-direction: column;
+    margin-top: 100px;
+    color: whitesmoke;
+    width: 865px;
+    height: 490px;
+    opacity: 0px;
+}
+
+.rowTop {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    width: 100%;
+    height: 50%;
+    padding: 0 0px;
+    border: 1px solid blue;
+}
+
+.rowBottom {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    padding: 0 0px;
+    border: 1px solid green;
+}
+
+.rowTopLeft {
+    @include dFlex($jc: center, $ai: center, $g: 24px);
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    border: 1px solid yellow;
+}
+.rowTopRight {
+    @include dFlex($jc: center, $ai: center, $g: 24px);
+    width: 35%;
+    height: 100%;
+    border: 1px solid purple;
+}
+
+.rowTopLeftTop {
+    @include dFlex($jc: flex-start, $ai: center, $g: 24px);
+    width: 100%;
+    height: 50%;
+    border: 1px solid orange;
+}
+
+.rowTopLeftBottom {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    width: 100%;
+    height: 50%;
+    border: 1px solid pink;
+}
+
+.rowBottomTop {
+    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
+    width: 100%;
+    height: 50%;
+    border: 1px solid brown;
+}
+
+.rowBottomBottom {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
 }

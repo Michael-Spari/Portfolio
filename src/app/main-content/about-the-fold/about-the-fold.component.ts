@@ -6,11 +6,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
   selector: 'app-about-the-fold',
   standalone: true,
   imports: [HeaderComponent, CommonModule],
-  template: `
-    <section>
-        <div><app-header></app-header></div> 
-    </section>
-    `,
+  templateUrl: './about-the-fold.component.html',
   styleUrl: './about-the-fold.component.scss'
 })
 export class AboutTheFoldComponent {
