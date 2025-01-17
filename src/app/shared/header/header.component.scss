@@ -1,17 +1,5 @@
 @import './../../../styles.scss';
 
-// @mixin borderStyle($bStyle) {
-//     border: 2px $bStyle white;
-//     border-radius: 10px;
-// }
-
-// @mixin dFlex($jc: center, $ai: center, $g: 0px) {
-//     display: flex;
-//     justify-content: $jc;
-//     align-items: $ai;
-//     gap: $g;
-// }
-
 nav {
     font-family: "Bricolage Grotesque";
     width: 1440px;
@@ -29,37 +17,16 @@ nav {
         width: 100%;
         height: Hug (42px)px;
         opacity: 0px;
-
-        display: flex;
         >a {
-            &:hover {
-                color: red;
-            }
+            text-decoration: none;
         }
     }
 }
 
-a {
+.nav-text {
     color: whitesmoke;
-    text-decoration: none;
     margin: 0 16px;
     font-size: 24px;
 }
 
-.phone_btn {
-    display: flex;
-    align-items: center;
-    @include borderStyle(solid);
-    background-color: #9f0908;
-    padding: 8px;
-    margin-left: 16px;
-    >img{
-        width: 32px;
-        height: 32px;
-    }
-    >a {
-        &:hover {
-            color: red;
-        }
-    }
-}
+
