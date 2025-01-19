@@ -3,30 +3,199 @@
 nav {
     font-family: "Bricolage Grotesque";
     width: 1440px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-left: 72px;
-    padding-right: 72px;
+    padding: 19px 72px;
     @include dFlex($jc: space-between, $g: 0px);
-    >img {
+    
+    > img {
         width: 64px;
         height: 64px;
     }
-    >div {
+
+    > .navContainer {
         @include dFlex($jc: space-between, $g: 0px);
         width: 100%;
-        height: Hug (42px)px;
-        opacity: 0px;
-        >a {
-            text-decoration: none;
-        }
+        height: auto;
+        opacity: 1;
     }
+}
+a {
+    text-decoration: none;
 }
 
 .nav-text {
     color: whitesmoke;
     margin: 0 16px;
-    font-size: 24px;
+    font-size: 18px;
+
 }
+
+.aboutMe {
+    position: relative;
+    display: inline-block;
+    width: 105px; // Größe des Containers anpassen
+    height: 45px; // Größe des Containers anpassen
+    overflow: hidden;
+
+    .aboutMeText {
+        position: absolute;
+        width: 200px; // Füllt den Container
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: whitesmoke;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .aboutMeOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0; // Startet mit einer Höhe von 0px
+        overflow: hidden;
+        transition: height 0.4s ease; // Übergangseffekt für die Höhe
+        z-index: 1;
+
+        img {
+            width: 105px; // Bild passt sich dem Container an
+            height: 43px; // Bild passt sich dem Container an
+            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+        }
+    }
+
+    &:hover {
+        .aboutMeOutLine {
+            height: 42px; // Höhe wird auf 42px erhöht
+        }
+    }
+}
+
+.skills {
+    position: relative;
+    display: inline-block;
+    width: 105px; // Größe des Containers anpassen
+    height: 45px; // Größe des Containers anpassen
+    overflow: hidden;
+
+    .skillsText {
+        position: absolute;
+        width: 200px; // Füllt den Container
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: whitesmoke;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .skillsOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0; // Startet mit einer Breite von 0px
+        overflow: hidden;
+        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        z-index: 1;
+
+        img {
+            width: 105px; // Bild passt sich dem Container an
+            height: 43px; // Bild passt sich dem Container an
+            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+        }
+    }
+
+    &:hover {
+        .skillsOutLine {
+            width: 105px; // Breite wird auf 105px erhöht
+        }
+    }
+}
+
+.projects {
+    position: relative;
+    display: inline-block;
+    width: 105px; // Größe des Containers anpassen
+    height: 45px; // Größe des Containers anpassen
+    overflow: hidden;
+
+    .projectsText {
+        position: absolute;
+        width: 200px; // Füllt den Container
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: whitesmoke;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .projectsOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0; // Startet mit einer Breite von 0px
+        overflow: hidden;
+        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        z-index: 1;
+
+        img {
+            width: 105px; // Bild passt sich dem Container an
+            height: 43px; // Bild passt sich dem Container an
+            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+        }
+    }
+
+    &:hover {
+        .projectsOutLine {
+            width: 105px; // Breite wird auf 105px erhöht
+        }
+    }
+}
+
+.contacts {
+    position: relative;
+    display: inline-block;
+    width: 105px; // Größe des Containers anpassen
+    height: 45px; // Größe des Containers anpassen
+    overflow: hidden;
+
+    .contactsText {
+        position: absolute;
+        width: 200px; // Füllt den Container
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: whitesmoke;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contactsOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0; // Startet mit einer Breite von 0px
+        overflow: hidden;
+        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        z-index: 1;
+
+        img {
+            width: 105px; // Bild passt sich dem Container an
+            height: 43px; // Bild passt sich dem Container an
+            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+        }
+    }
+
+    &:hover {
+        .contactsOutLine {
+            width: 105px; // Breite wird auf 105px erhöht
+        }
+    }
+}
+
 
 
