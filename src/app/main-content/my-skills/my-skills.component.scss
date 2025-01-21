@@ -1,0 +1,135 @@
+@import './../../../styles.scss';
+section {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('./../../../assets/img/backgrounds/02_Hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    flex-direction: column;
+    height: 1040px;
+}
+
+.myStack {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.skillSetContainer {
+    position: relative;
+}
+
+.skillSetContainer img {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 250px;
+    height: 80px;
+    height: auto;
+    z-index: 0;
+}
+
+.skillSet {
+    font-size: 64px;
+    font-weight: 700;
+    color: whitesmoke;
+    position: relative;
+    z-index: 1;
+}
+
+.skillsContent {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-family: 'Bricolage Grotesque';
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+}
+
+.skillTextMiddle {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('./../../../assets/icon/skills/paper.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 656px;
+    height: 144px;
+    border: 0px solid yellow;
+}
+
+.skillText {
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+.skillSetContainer {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-wrap: wrap;
+}
+
+.skillItem {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    width: 130px;
+    height: 130px;
+    position: relative;
+
+    > img {
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+
+        &:hover {
+            filter: grayscale(0%);
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+
+.skillIconText {
+    @include dFlex($jc: center, $ai: flex-end, $g: 0px);
+    font-size: 18px;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+    // width: 100%;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+}
+
+.skillButtonRight {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+}
+
+.skillsContentLeft {
+    @include dFlex($jc: flex-start, $ai: flex-end, $g: 0px);
+    flex-direction: column;
+    padding-top: 150px;
+    padding-right: 60px;
+    width: 50%;
+    height: 100%;
+    border: 0px solid green;
+}
+
+.skillsContentMiddle {
+    @include dFlex($jc: flex-start, $ai: center, $g: 0px);
+    flex-direction: column;
+    padding-top: 150px;
+    height: 100%;
+    border: 0px solid red;
+}
+
+.skillsContentRight {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    width: 50%;
+    height: 100%;
+    border: 0px solid blue;
+}

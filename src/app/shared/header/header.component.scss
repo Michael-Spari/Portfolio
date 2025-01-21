@@ -3,6 +3,7 @@
 nav {
     font-family: "Bricolage Grotesque";
     width: 1440px;
+    max-width: 1440px;
     padding: 19px 72px;
     @include dFlex($jc: space-between, $g: 0px);
     
@@ -26,7 +27,11 @@ a {
     color: whitesmoke;
     margin: 0 16px;
     font-size: 18px;
+}
 
+.logo {
+    height: 120px;
+    
 }
 
 .aboutMe {
