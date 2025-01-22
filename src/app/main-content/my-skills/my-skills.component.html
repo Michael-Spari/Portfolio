@@ -65,7 +65,9 @@
                 
         </div>
         <div class="skillsContentRight">
-            <div class="skillButtonRight"><img src="assets/icon/skills/pullMe1.png"></div>
+            <div class="skillButtonRight" (click)="toggleImage()">
+                <img [src]="showFirstImage ? 'assets/icon/skills/pullMe1.png' : 'assets/icon/skills/pullMe3.png'">
+            </div>
         </div>
             
     </div>

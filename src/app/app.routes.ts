@@ -4,6 +4,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { AboutTheFoldComponent } from './main-content/about-the-fold/about-the-fold.component';
 import { AboutMeComponent } from './main-content/about-me/about-me.component';
 import { MySkillsComponent } from './main-content/my-skills/my-skills.component';
+import { ProjectsComponent } from './main-content/projects/projects.component';
 
 export const routes: Routes = [
     { path: '', component: MainContentComponent },
@@ -11,4 +12,5 @@ export const routes: Routes = [
     { path: 'about-the-fold', component: AboutTheFoldComponent },
     { path: 'about-me', component: AboutMeComponent },
     { path: 'my-skills', component: MySkillsComponent },
+    { path: 'projects', component: ProjectsComponent }
 ];

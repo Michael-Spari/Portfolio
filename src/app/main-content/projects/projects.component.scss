@@ -1,0 +1,78 @@
+@import './../../../styles.scss';
+section {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-family: 'Bricolage Grotesque';
+    background-color: whitesmoke;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 1040px;
+}
+
+.topRowProjects {
+    @include dFlex($jc: space-around, $ai: center, $g: 0px);
+    background-color: whitesmoke;
+    width: 1440px;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.bottomRowProjects {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-color: whitesmoke;
+    width: 1440px;
+    height: 50%;
+    border: 1px solid black;
+}
+
+p {
+    font-size: 18px;
+}
+
+.projectsTitle {
+    font-size: 62px;
+    // font-weight: 700;
+    width: 560px;
+    margin-bottom: 20px;
+    border: 0px solid green;
+}
+
+.projectsDescription {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border: 0px solid red;
+}
+
+.laptop {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    position: relative;
+    width: 560px;
+    height: 338px;
+    border: 0px solid blue;
+}
+
+.sticker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.proTheDebugger {
+    width: 560px;
+    border: 2px solid yellow;
+}
+
+.theDebugger {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.daBubble {
+    width: 560px;
+    height: 338px;
+    border: 2px solid purple;
+}

@@ -31,7 +31,7 @@ section {
 }
 
 .skillSet {
-    font-size: 64px;
+    font-size: 62px;
     font-weight: 700;
     color: whitesmoke;
     position: relative;
@@ -41,7 +41,7 @@ section {
 .skillsContent {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     font-family: 'Bricolage Grotesque';
-    width: 100%;
+    width: 90%;
     height: 100%;
     border: 0px solid white;
 }
@@ -133,4 +133,13 @@ section {
     width: 50%;
     height: 100%;
     border: 0px solid blue;
+}
+
+.skillButtonRight {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    > img {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        transform: rotate(8deg);
+    }
 }
