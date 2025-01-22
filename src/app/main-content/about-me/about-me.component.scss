@@ -1,6 +1,7 @@
 @import './../../../styles.scss';
 section {
     @include dFlex($jc: center, $ai: center, $g: 0px);
+    max-width: 1440px;
     height: 720px;
     background-color: whitesmoke;
 }
@@ -30,7 +31,7 @@ section {
     }
 }
 
-.getInTouch {
+.letsTalk {
     border: 1px solid black;
     border-radius: 100px;
     background-color: whitesmoke;
