@@ -1,6 +1,6 @@
 @import './../../../styles.scss';
 section {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
+    @include dFlex($jc: space-around, $ai: center, $g: 0px);
     background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@ section {
 }
 
 .contactMainFrame {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
+    @include dFlex($jc: space-around, $ai: flex-start, $g: 0px);
+    width: 100%;
 }
 
 .leftFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 1px solid white;
     flex-direction: column;
-    width: 50%;
+    width: 560px;
 }
 
 .contactMe {
@@ -45,16 +45,13 @@ section {
 
 .rightFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 1px solid white;
-    width: 50%;
-    height: 600px;
+    width: 468px;
 }
 
 .mailForm {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid green;
 }
 
 .logoImage {
@@ -63,12 +60,11 @@ section {
     right: 38px;
     width: 90px;
     z-index: 3;
-    transform: rotate(15deg); /* Rotate the image by 8 degrees */
+    transform: rotate(15deg);
 }
 
 .logo {
     position: absolute;
-    border: 1px solid blue;
     right: 0;
     top: 0;
     display: flex;
@@ -76,7 +72,7 @@ section {
     justify-content: center;
     width: 168px;
     height: 168px;
-    z-index: 1; /* Ensure the logo is above other elements */
+    z-index: 1;
 }
 
 .circle-text {
@@ -85,13 +81,90 @@ section {
     right: 0px;
     width: 100%;
     height: 100%;
-    z-index: 2; /* Ensure the text is above the logo */
+    z-index: 2;
 }
 
 .circle-text text {
     font-size: 14px;
     font-weight: 400;
     text-anchor: middle;
-    fill: black; /* Farbe des Textes */
+    fill: black;
+}
+
+.contactRows {
+    @include dFlex($jc: center, $ai: flex-start, $g: 0px);
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.contactFields {
+    @include dFlex($jc: flex-end, $ai: flex-start, $g: 15px);
+    border-bottom: 1px solid #F7C518 ;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    height: 90px;
+    width: 100%;
+}
+
+.headline {
+    font-size: 24px;
+}
+
+.inputField {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.agreeField {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 15px);
+    height: 20px;
+    margin-top: 50px;
+}
+
+.checkField {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 15px);
+}
+
+a {
+    color: #3355FF;
+    text-decoration: none;
+}
+
+.sendButton {
+    @include dFlex($jc: flex-end, $ai: flex-start, $g: 15px);
+    margin-top: 60px;
+    width: 100%;
+}
+
+.pleaseAccept {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 15px);
+    margin-top: 30px;
+    font-size: 14px;
+    color: #F87A55;
+    width: 100%;
+}
+.sendBtn {
+    border: 1px solid whitesmoke;
+    border-radius: 100px;
+    background-color: transparent;
+    color: whitesmoke;
+    width: 154px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 2px 4px whitesmoke;
+    transition: background-color 0.1s, box-shadow 0.2s, transform 0.2s;
+
+    &:hover {
+        background-color: #F87A55;
+        box-shadow: none;
+        transform: translate(2px, 4px);
+    }
 }
 
