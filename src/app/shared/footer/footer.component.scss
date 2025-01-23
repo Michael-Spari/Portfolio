@@ -1,0 +1,19 @@
+@import './../../../styles.scss';
+section {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-family: 'Bricolage Grotesque';
+    background-color: whitesmoke;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 132px;
+}
+
+.logoRow {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.linkRow {
+    width: 100%;
+    border: 1px solid green;
+}
