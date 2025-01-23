@@ -1,0 +1,97 @@
+@import './../../../styles.scss';
+section {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    font-family: 'Bricolage Grotesque';
+    color: whitesmoke;
+    max-width: 1440px;
+    height: 1100px;
+}
+
+.contactMainFrame {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+}
+
+.leftFrame {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    border: 1px solid white;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contactMe {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 0px);
+    font-size: 20px;
+    width: 100%;
+}
+
+.headLine {
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.contactText {
+    font-size: 18px;
+}
+
+.arrow {
+    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
+    margin-top: 50px;
+    width: 100%;
+}
+
+.rightFrame {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    border: 1px solid white;
+    width: 50%;
+    height: 600px;
+}
+
+.mailForm {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+}
+
+.logoImage {
+    position: absolute;
+    top: 50px;
+    right: 38px;
+    width: 90px;
+    z-index: 3;
+    transform: rotate(15deg); /* Rotate the image by 8 degrees */
+}
+
+.logo {
+    position: absolute;
+    border: 1px solid blue;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 168px;
+    z-index: 1; /* Ensure the logo is above other elements */
+}
+
+.circle-text {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure the text is above the logo */
+}
+
+.circle-text text {
+    font-size: 14px;
+    font-weight: 400;
+    text-anchor: middle;
+    fill: black; /* Farbe des Textes */
+}
+
