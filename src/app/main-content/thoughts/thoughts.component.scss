@@ -1,0 +1,41 @@
+@import './../../../styles.scss';
+section {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-family: 'Bricolage Grotesque';
+    background-color: whitesmoke;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 840px;
+}
+
+.thoughtsHeadline {
+    @include dFlex($jc: center, $ai: flex-end, $g: 0px);
+    flex-direction: column;
+    font-size: 62px;
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+}
+
+.topRow {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-size: 20px;
+}
+
+.arrow {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.bottomRow {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.thoughtsCards {
+    width: 1200px;
+    height: 405px;
+    border: 1px solid black;
+}
