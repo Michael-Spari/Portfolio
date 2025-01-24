@@ -1,14 +1,15 @@
 @import './../../../styles.scss';
 section {
-    @include dFlex($jc: space-around, $ai: center, $g: 0px);
+    @include dFlex($jc: flex-end, $ai: space-around, $g: 0px);
     background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
+    flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: whitesmoke;
     font-family: 'Bricolage Grotesque';
     color: whitesmoke;
     max-width: 1440px;
-    height: 1100px;
+    height: 1010px;
 }
 
 .contactMainFrame {

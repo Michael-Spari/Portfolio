@@ -2,18 +2,109 @@
 section {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     font-family: 'Bricolage Grotesque';
-    background-color: whitesmoke;
+    background-color: transparent;
     flex-direction: column;
     max-width: 1440px;
-    height: 132px;
+    padding-bottom: 60px;
+
 }
 
 .logoRow {
     width: 100%;
-    border: 1px solid white;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logoImage {
+    width: 120px;
+    padding-bottom: 15px;
 }
 
 .linkRow {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
     width: 100%;
-    border: 1px solid green;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.btnAnimation {
+    cursor: pointer;
+    border-radius: 100px;
+    width: 84px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    transition: color 0.2s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        background-color: #3355FF;
+        transition: width 0.2s, left 0.2s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    &:hover {
+        color: whitesmoke;
+        transform: scaleX(1.1);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.legalNotice {
+    position: relative;
+    display: inline-block;
+    width: 105px;
+    height: 45px;
+    overflow: hidden;
+
+.legalNoticeText {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.legalNoticeOutLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    z-index: 1;
+    img {
+        width: 105px;
+        height: 43px;
+        object-fit: cover;
+    }
+}
+
+    &:hover {
+        .legalNoticeOutLine {
+            width: 105px;
+        }
+    }
 }
