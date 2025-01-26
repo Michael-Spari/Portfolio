@@ -1,0 +1,175 @@
+@import './../../styles.scss';
+section {
+    height: 100vh;
+    max-width: 1440px;
+    background-image: url('./../../assets/img/backgrounds/detail.png');
+    font-family: 'Bricolage Grotesque';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+        color: #F7C518;
+    }
+}
+
+.goBack {
+    @include dFlex($jc: flex-start, $ai: flex-start, $g: 10px);
+    width: 1200px;
+    margin-bottom: 50px;
+}
+
+.goNext {
+    @include dFlex($jc: flex-end, $ai: flex-start, $g: 10px);
+    width: 1200px;
+    margin-top: 50px;
+}
+
+.detailFrame {
+    @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
+    width: 1200px;
+}
+
+.detailFrameLeft {
+    width: 488px;
+    margin-top: 0px;
+}
+
+.headline {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.blueLine {
+    margin-bottom: 40px
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.desText {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.impDetails {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.duration {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.iconsDuration {
+    @include dFlex($jc: flex-start, $ai: center, $g: 15px);
+    width: 100%;
+}
+
+.icons {
+    @include dFlex($jc: flex-start, $ai: center, $g: 0px);
+}
+
+.detailFrameRight {
+    @include dFlex($jc: flex-start, $ai: center, $g: 10px);
+    width: 560px;
+    height: 100%;
+
+}
+
+.imageLogoFrame {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projectImage {
+    width: 560px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.logoImage {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    width: 65px;
+    z-index: 3;
+    transform: rotate(15deg);
+}
+
+.logo {
+    position: absolute;
+    right: -50px;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+.circle-text {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.circle-text text {
+    font-size: 14px;
+    font-weight: 400;
+    text-anchor: middle;
+    fill: black;
+}
+
+.buttonFrame {
+    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
+    width: 100%;
+
+}
+
+.sendButton {
+    @include dFlex($jc: flex-end, $ai: flex-start, $g: 0px);
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.gitandLiveBtn {
+    border: 1px solid whitesmoke;
+    border-radius: 100px;
+    background-color: transparent;
+    color: whitesmoke;
+    width: 110px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 2px 4px whitesmoke;
+    transition: background-color 0.1s, box-shadow 0.2s, transform 0.2s;
+
+    &:hover {
+        background-color: #F87A55;
+        box-shadow: none;
+        transform: translate(2px, 4px);
+    }
+}

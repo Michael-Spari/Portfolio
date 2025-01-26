@@ -19,6 +19,7 @@ nav {
         opacity: 1;
     }
 }
+
 a {
     text-decoration: none;
 }
@@ -37,13 +38,13 @@ a {
 .aboutMe {
     position: relative;
     display: inline-block;
-    width: 105px; // Größe des Containers anpassen
-    height: 45px; // Größe des Containers anpassen
+    width: 105px;
+    height: 45px;
     overflow: hidden;
 
     .aboutMeText {
         position: absolute;
-        width: 200px; // Füllt den Container
+        width: 200px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -57,21 +58,21 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        height: 0; // Startet mit einer Höhe von 0px
+        height: 0;
         overflow: hidden;
-        transition: height 0.4s ease; // Übergangseffekt für die Höhe
+        transition: height 0.4s ease;
         z-index: 1;
 
         img {
-            width: 105px; // Bild passt sich dem Container an
-            height: 43px; // Bild passt sich dem Container an
-            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
         }
     }
 
     &:hover {
         .aboutMeOutLine {
-            height: 42px; // Höhe wird auf 42px erhöht
+            height: 42px;
         }
     }
 }
@@ -79,13 +80,13 @@ a {
 .skills {
     position: relative;
     display: inline-block;
-    width: 105px; // Größe des Containers anpassen
-    height: 45px; // Größe des Containers anpassen
+    width: 105px;
+    height: 45px;
     overflow: hidden;
 
     .skillsText {
         position: absolute;
-        width: 200px; // Füllt den Container
+        width: 200px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -99,21 +100,21 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        width: 0; // Startet mit einer Breite von 0px
+        width: 0;
         overflow: hidden;
-        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        transition: width 0.4s ease;
         z-index: 1;
 
         img {
-            width: 105px; // Bild passt sich dem Container an
-            height: 43px; // Bild passt sich dem Container an
-            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
         }
     }
 
     &:hover {
         .skillsOutLine {
-            width: 105px; // Breite wird auf 105px erhöht
+            width: 105px;
         }
     }
 }
@@ -121,13 +122,13 @@ a {
 .projects {
     position: relative;
     display: inline-block;
-    width: 105px; // Größe des Containers anpassen
-    height: 45px; // Größe des Containers anpassen
+    width: 105px;
+    height: 45px;
     overflow: hidden;
 
     .projectsText {
         position: absolute;
-        width: 200px; // Füllt den Container
+        width: 200px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -141,21 +142,21 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        width: 0; // Startet mit einer Breite von 0px
+        width: 0;
         overflow: hidden;
-        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        transition: width 0.4s ease;
         z-index: 1;
 
         img {
-            width: 105px; // Bild passt sich dem Container an
-            height: 43px; // Bild passt sich dem Container an
-            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
         }
     }
 
     &:hover {
         .projectsOutLine {
-            width: 105px; // Breite wird auf 105px erhöht
+            width: 105px;
         }
     }
 }
@@ -163,13 +164,13 @@ a {
 .contacts {
     position: relative;
     display: inline-block;
-    width: 105px; // Größe des Containers anpassen
-    height: 45px; // Größe des Containers anpassen
+    width: 105px;
+    height: 45px;
     overflow: hidden;
 
     .contactsText {
         position: absolute;
-        width: 200px; // Füllt den Container
+        width: 200px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -183,21 +184,21 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        width: 0; // Startet mit einer Breite von 0px
+        width: 0;
         overflow: hidden;
-        transition: width 0.4s ease; // Übergangseffekt für die Breite
+        transition: width 0.4s ease;
         z-index: 1;
 
         img {
-            width: 105px; // Bild passt sich dem Container an
-            height: 43px; // Bild passt sich dem Container an
-            object-fit: cover; // Skaliert das Bild ohne Verzerrung
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
         }
     }
 
     &:hover {
         .contactsOutLine {
-            width: 105px; // Breite wird auf 105px erhöht
+            width: 105px;
         }
     }
 }

@@ -1,4 +1,15 @@
 @import './../../../styles.scss';
+
+input[type=text], [type=email], select, textarea {
+    width: 100%;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+}
+span {
+    z-index: 10;
+}
+
 section {
     @include dFlex($jc: flex-end, $ai: space-around, $g: 0px);
     background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
@@ -110,13 +121,6 @@ section {
 
 .headline {
     font-size: 24px;
-}
-
-.inputField {
-    font-size: 18px;
-    background-color: transparent;
-    border: none;
-    color: white;
 }
 
 .agreeField {

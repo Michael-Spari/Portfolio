@@ -31,17 +31,24 @@
                                     onmouseout="this.src='assets/logo/logo_ms_en_over.png'">
                     </div>
                     <div class="contactRows">
+                        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="contactFields">
-                            <div class="headline"><p>What`s your name?</p></div>
-                            <input class="inputField" class="inputField" type="text" placeholder="Your name goes here">
+                            <div class="headline"><label for="name">What`s your name?</label></div>
+                            <input [(ngModel)]="contactData.name" id="name" name="name" class="inputField" type="text" placeholder="Your name goes here" required>
                         </div>
                         <div class="contactFields">
-                            <div class="headline"><p>What`s your email?</p></div>
-                            <input class="inputField" class="inputField" type="text" placeholder="youremail@email.com">
+                            <div class="headline"><label for="email">What`s your email?</label></div>
+                            <input [(ngModel)]="contactData.email" id="email" name="email" class="inputField" type="text" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            <!-- @if (!email.valid && email.touched && email.disabled) {
+                                <span>Please enter a email</span>
+                            } -->
                         </div>
                         <div class="contactFields">
-                            <div class="headline"><p>How can I help you?</p></div>
-                            <input class="inputField" class="inputField" type="text" placeholder="Hello Lukas, I am interested in...">
+                            <div class="headline"><label for="message">How can I help you?</label></div>
+                            <input #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" class="inputField" type="text" placeholder="Hello Lukas, I am interested in..." required>
+                            @if (!message.valid && message.touched && message.disabled) {
+                                <span>Please enter a message</span>
+                            }
                         </div>
                         <div class="agreeField">
                             <input type="checkbox" id="agree" class="checkField" name="agree">
@@ -49,7 +56,8 @@
                                   and agree to the processing of my data as outlined.</label>  
                         </div>
                         <div class="pleaseAccept"><p>Please accept the privacy policy</p></div>
-                        <div class="sendButton"><button class="sendBtn">Send</button></div>
+                        <div class="sendButton"><input type="submit" value="Send" class="sendBtn"></div>
+                        </form>
                     </div>
                 </div>
             </div>
