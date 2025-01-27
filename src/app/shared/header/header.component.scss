@@ -1,5 +1,4 @@
 @import './../../../styles.scss';
-
 nav {
     font-family: "Bricolage Grotesque";
     width: 1440px;
@@ -25,8 +24,7 @@ a {
 }
 
 .nav-text {
-    color: whitesmoke;
-    margin: 0 16px;
+    text-decoration: none;
     font-size: 18px;
 }
 
@@ -49,8 +47,6 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        color: whitesmoke;
-        font-size: 24px;
         text-align: center;
     }
 
@@ -91,8 +87,6 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        color: whitesmoke;
-        font-size: 24px;
         text-align: center;
     }
 
@@ -119,89 +113,6 @@ a {
     }
 }
 
-.projects {
-    position: relative;
-    display: inline-block;
-    width: 105px;
-    height: 45px;
-    overflow: hidden;
-
-    .projectsText {
-        position: absolute;
-        width: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        color: whitesmoke;
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .projectsOutLine {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        overflow: hidden;
-        transition: width 0.4s ease;
-        z-index: 1;
-
-        img {
-            width: 105px;
-            height: 43px;
-            object-fit: cover;
-        }
-    }
-
-    &:hover {
-        .projectsOutLine {
-            width: 105px;
-        }
-    }
-}
-
-.contacts {
-    position: relative;
-    display: inline-block;
-    width: 105px;
-    height: 45px;
-    overflow: hidden;
-
-    .contactsText {
-        position: absolute;
-        width: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        color: whitesmoke;
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .contactsOutLine {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        overflow: hidden;
-        transition: width 0.4s ease;
-        z-index: 1;
-
-        img {
-            width: 105px;
-            height: 43px;
-            object-fit: cover;
-        }
-    }
-
-    &:hover {
-        .contactsOutLine {
-            width: 105px;
-        }
-    }
-}
 
 
 
