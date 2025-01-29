@@ -1,15 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
+
 export class HeaderComponent implements AfterViewInit {
+
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
 
   async ngAfterViewInit(): Promise<void> {
@@ -92,7 +95,7 @@ export class HeaderComponent implements AfterViewInit {
       };
 
       img.onerror = (error) => reject(error);
-    });
+    }); 
   }
 
   // Funktion zur Bestimmung der Textfarbe basierend auf der Hintergrundfarbe

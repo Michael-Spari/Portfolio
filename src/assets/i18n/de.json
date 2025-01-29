@@ -1,0 +1,43 @@
+{
+    "navi": {
+        "aboutme": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt" 
+    },
+
+    "about-the-fold": {
+        "button": "Nehmen Sie Kontakt auf"
+    },
+
+    
+    "about-me": {
+      "title": "WER IST MICHAEL?",
+      "subline": "Über mich",
+      "text": "Hallo! Ich bin Michael, ein Frontend-Entwickler, der leidenschaftlich daran interessiert ist, intuitive und effiziente digitale Erlebnisse zu schaffen. Mit einem natürlichen Problemlösungsansatz und einem geschulten Auge für Details habe ich mich darauf spezialisiert, komplexe Konzepte in visuell ansprechende und funktionale Web-Lösungen zu verwandeln. Lass uns zusammenarbeiten und etwas Außergewöhnliches aufbauen!",
+      "button": "Lass uns reden"
+    },
+
+    "skills": {
+        "stack": "MEIN STAPEL",
+        "title": "Fähigkeiten",
+        "text": "Ich habe Erfahrung im Aufbau von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um meine Fähigkeiten zu erweitern."
+      },
+      
+    "projects": {
+        "text-craft": "MEIN HANDWERK",
+        "headline": "Projekte",
+        "text-all": "Werfen Sie einen Blick auf einige meiner Projekte und sehen Sie meine Frontend-Fähigkeiten in Aktion. Jedes Projekt hebt meinen Ansatz hervor, responsive, benutzerfreundliche Designs mit effizientem Code zu erstellen.",
+        "headline-join": "Join",
+        "text-join": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "headline-debugger": "The Debugger",
+        "text-debugger": "Springe, renne und wirf Spiel basierend auf einem objektorientierten Ansatz. Hilf Michael, Münzen und Sprays zu finden, um gegen die Bugs zu kämpfen.",
+        "headline-pokedex": "DABubble",
+        "text-pokedex": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+        "button-pokedex": "Projekt Details",
+        "button-debugger": "Projekt Details",
+        "button-join": "Projekt Details"
+}
+
+
+  }

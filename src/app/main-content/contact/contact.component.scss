@@ -2,7 +2,7 @@
 
 input[type=text], [type=email], select, textarea {
     width: 100%;
-    border: 1px solid whitesmoke;
+    border: 1px solid transparent;
     background-color: transparent;
     color: white;
 }
@@ -18,9 +18,11 @@ section {
     background-repeat: no-repeat;
     background-color: whitesmoke;
     font-family: 'Bricolage Grotesque';
+    padding-top: 100px;
     color: whitesmoke;
     max-width: 1440px;
     height: 1010px;
+    margin: 0 auto;
 }
 
 .contactMainFrame {
@@ -112,11 +114,17 @@ section {
 .contactFields {
     @include dFlex($jc: flex-end, $ai: flex-start, $g: 15px);
     border-bottom: 1px solid #F7C518 ;
+    border-top: 1px solid transparent;
     flex-direction: column;
     padding-bottom: 15px;
     padding-left: 20px;
     height: 90px;
     width: 100%;
+    
+    &:hover {
+        border-top: 1px solid #3355FF;
+        border-bottom: 1px solid #3355FF;
+    }
 }
 
 .headline {

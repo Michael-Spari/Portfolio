@@ -1,20 +1,60 @@
 @import './../../../styles.scss';
 section {
     height: 100vh;
-    max-width: 1440px;
+    max-width: 1440px; // Maximale Breite ist 1440px
+    width: 100%; // Nimmt 100% der verfügbaren Breite ein
+    box-sizing: border-box; // Padding und Border werden in der Breite berücksichtigt
+    margin: 0 auto; // Zentriert die Section bei größeren Viewports
     background-image: url('./../../../assets/img/backgrounds/01_Hero.png');
     background-size: cover;
     background-color: whitesmoke;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // border: 10px solid blue;
+    // padding: 0 16px; // Seitlicher Abstand für kleine Bildschirme
 }
 
 .mainFrame {
     @include dFlex($jc: space-around, $ai: flex-end, $g: 0px);
-    width: 100%;
+    box-sizing: border-box;
+    max-width: 1440px;
     height: 650px;
+    // border: 3px solid whitesmoke;
+}
+
+.masterContainerFrame {
+    width: calc(100% - 32px); // Flexibel mit 16px Puffer auf beiden Seiten
+    max-width: 1440px;
+    height: 600px;
+    margin: 0 auto; // Zentriert den Container
+    // border: 5px solid green;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    @include dFlex($jc: space-between, $ai: space-between, $g: 24px);
+    // border: 3px solid salmon;
+    width: 100%;
+    flex-direction: column;
+    color: whitesmoke;
+    height: 490px;
+    opacity: 0px;
+}
+
+.placeholderLeft {
+    width: 20%;
+    height: 100%;
+    background-color: none;
+    opacity: 0.5;
+}
+
+.placeholderRight {
+    width: 20%;
+    height: 100%;
+    background-color: none;
+    opacity: 0.5;
 }
 
 .wavingHandDiv {
@@ -195,6 +235,8 @@ section {
 .leftFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     flex-direction: column;
+    border: 0px solid yellow;
+    margin-left: 5%;
 }
 
 .topLeftFrame {
@@ -207,22 +249,6 @@ section {
 
 .bottomLeftFrame {
     border: 0px solid red;
-}
-
-.masterContainerFrame {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    width: 80%;
-    height: 600px;
-}
-
-
-.container {
-    @include dFlex($jc: space-between, $ai: space-between, $g: 24px);
-    flex-direction: column;
-    color: whitesmoke;
-    width: 75%;
-    height: 490px;
-    opacity: 0px;
 }
 
 .rowTop {

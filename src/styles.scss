@@ -1,11 +1,10 @@
 @import './styles/mixin.scss';
 *{
-    margin: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body {
     background-color: black;
+    margin: 0;
 }
 
 .fontKalam{

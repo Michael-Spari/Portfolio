@@ -2,6 +2,7 @@
 section {
     height: 100vh;
     max-width: 1440px;
+    width: 100%;
     background-image: url('./../../assets/img/backgrounds/detail.png');
     font-family: 'Bricolage Grotesque';
     background-size: cover;
@@ -9,7 +10,9 @@ section {
     background-color: rgb(30, 30, 30);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 a {
@@ -25,19 +28,16 @@ a {
 
 .goBack {
     @include dFlex($jc: flex-start, $ai: flex-start, $g: 10px);
-    width: 1200px;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .goNext {
     @include dFlex($jc: flex-end, $ai: flex-start, $g: 10px);
-    width: 1200px;
-    margin-top: 50px;
+    // margin-top: 20px;
 }
 
 .detailFrame {
     @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
-    width: 1200px;
 }
 
 .detailFrameLeft {
@@ -51,7 +51,7 @@ a {
 }
 
 .blueLine {
-    margin-bottom: 40px
+    margin-bottom: 0px
 }
 
 .description {
@@ -86,7 +86,7 @@ a {
 
 .detailFrameRight {
     @include dFlex($jc: flex-start, $ai: center, $g: 10px);
-    width: 560px;
+    // width: 560px;
     height: 100%;
 
 }

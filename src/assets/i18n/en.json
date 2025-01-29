@@ -1,0 +1,40 @@
+{
+  "navi": {
+    "aboutme": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contacts" 
+},
+
+"about-the-fold": {
+  "button": "Get in Touch"
+},
+
+"skills": {
+  "stack": "MY STACK",
+  "title": "Skill set",
+  "text": "I have gained experience in building projects with a variety of frontend technologies and concepts. With a strong growth mindset, I’m always exploring new areas to enhance my skill set."
+},
+
+"about-me": {
+  "title": "WHO`S MICHAEL?",
+  "subline": "About me",
+  "text": "Hi there! I'm Michael, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions.Let’s collaborate and build something remarkable together!",
+  "button": "Let`s talk"
+},
+
+"projects": {
+  "text-craft": "MY CRAFT",
+  "headline": "Projects",
+  "text-all": "Take a look at some of my projects and see my front-end skills in action. Each project highlights my approach to building responsive, user-friendly designs with efficient code.",
+  "headline-join": "Join",
+  "text-join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+  "headline-debugger": "The Debugger",
+  "text-debuggert": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and Sprays to fight against the Bugs.",
+  "headline-pokedex": "DABubble",
+  "text-pokedex": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+  "button-pokedex": "Project details",
+  "button-debugger": "Project details",
+  "button-join": "Project details"
+}
+}

@@ -1,10 +1,12 @@
 @import './../../../styles.scss';
+
 nav {
     font-family: "Bricolage Grotesque";
-    width: 1440px;
     max-width: 1440px;
-    padding: 19px 72px;
-    @include dFlex($jc: space-between, $g: 0px);
+    // border: 10px solid yellow;
+    padding-left: 5%;
+    padding-right: 5%;
+
     
     > img {
         width: 64px;
@@ -12,9 +14,9 @@ nav {
     }
 
     > .navContainer {
-        @include dFlex($jc: space-between, $g: 0px);
-        width: 100%;
+        @include dFlex($jc: space-between, $ai: center, $g: 0px);
         height: auto;
+        // border: 1px solid red;
         opacity: 1;
     }
 }

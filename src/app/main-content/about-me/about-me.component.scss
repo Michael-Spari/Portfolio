@@ -3,6 +3,8 @@ section {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     max-width: 1440px;
     height: 720px;
+    width: 100%;
+    margin: 0 auto;
     background-color: whitesmoke;
 }
 
