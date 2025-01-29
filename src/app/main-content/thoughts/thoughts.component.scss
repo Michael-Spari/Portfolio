@@ -59,16 +59,22 @@ section {
 .cardName {
     font-size: 18px;
     font-weight: 700;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .fontendDeveloper {
     font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .cardNameProfile {
-    @include dFlex($jc: space-between, $ai: flex-end, $g: 10px);
+    @include dFlex($jc: space-between, $ai: center, $g: 10px);
     font-size: 18px;
     height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .cardOne {
@@ -83,7 +89,7 @@ section {
     width: 512px;
     height: 320px;
     transform: rotate(-4deg);
-    z-index: 1;
+    z-index: 2;
 }
 
 .cardTwo {
@@ -97,6 +103,7 @@ section {
     left: 400px;
     width: 512px;
     height: 320px;
+    z-index: 1;
 }
 
 .cardThree {
@@ -111,4 +118,5 @@ section {
     width: 512px;
     height: 320px;
     transform: rotate(4deg);
+    z-index: 0;
 }

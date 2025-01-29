@@ -7,17 +7,57 @@ nav {
     padding-left: 5%;
     padding-right: 5%;
 
-    
     > img {
         width: 64px;
         height: 64px;
     }
+}
 
-    > .navContainer {
-        @include dFlex($jc: space-between, $ai: center, $g: 0px);
-        height: auto;
-        // border: 1px solid red;
-        opacity: 1;
+.navContainer {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    height: auto;
+    // border: 1px solid red;
+    // opacity: 1;
+}
+
+.languageSwitch {
+    display: flex;
+}
+
+.languageTextEn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #F87A55;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.languageTextDe {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    img + img {
+        top: 0;
+        left: 0;
     }
 }
 
@@ -26,8 +66,10 @@ a {
 }
 
 .nav-text {
-    text-decoration: none;
     font-size: 18px;
+    mix-blend-mode: difference;
+    color: white;
+
 }
 
 .logo {
@@ -41,6 +83,7 @@ a {
     width: 105px;
     height: 45px;
     overflow: hidden;
+    mix-blend-mode: difference;
 
     .aboutMeText {
         position: absolute;
@@ -81,6 +124,7 @@ a {
     width: 105px;
     height: 45px;
     overflow: hidden;
+    mix-blend-mode: difference;
 
     .skillsText {
         position: absolute;

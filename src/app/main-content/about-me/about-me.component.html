@@ -2,12 +2,16 @@
     <!-- <div>{{ 'about-me.title' | translate }}</div>
     <div>{{ 'about-me.hello' | translate: {name} }}</div> -->
     <div class="mainContent">
-        <div class="leftContent"><img src="assets/img/aboutme/Location.png"></div>
+        <div class="leftContent">
+            <div class="based"><img src="assets/img/aboutme/locationIcons.png">{{ 'about-me.based' | translate }}</div>
+            <div class="locate"><img src="assets/img/aboutme/relocateIcons.png">{{ 'about-me.locate' | translate }}</div>
+            <div class="remote"><img src="assets/img/aboutme/homeIcons.png">{{ 'about-me.remote' | translate }}</div>
+    </div>
         <div class="rightContent">
             <div class="rightContentTop">
-                <p>{{ 'about-me.title' | translate }}</p>
+                <div><p>{{ 'about-me.title' | translate }}</p></div>
                 <div class="aboutMe"><p>{{ 'about-me.subline' | translate }}</p></div>
-                <img class="lineBlue" src="assets/img/aboutme/19_Line.png">
+                <div><img class="lineBlue" src="assets/img/aboutme/19_Line.png"></div>
             </div>
             <div class="rightContentMiddle">
                 <p>{{ 'about-me.text' | translate: {text} }}</p>

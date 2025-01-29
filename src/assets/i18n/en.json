@@ -17,6 +17,9 @@
 },
 
 "about-me": {
+  "based": "Based in Bendorf Sayn",
+  "locate": "Open to relocate",
+  "remote": "Open to work remote",
   "title": "WHO`S MICHAEL?",
   "subline": "About me",
   "text": "Hi there! I'm Michael, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions.Let’s collaborate and build something remarkable together!",
@@ -30,11 +33,39 @@
   "headline-join": "Join",
   "text-join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
   "headline-debugger": "The Debugger",
-  "text-debuggert": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and Sprays to fight against the Bugs.",
+  "text-debugger": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and Sprays to fight against the Bugs.",
   "headline-pokedex": "DABubble",
   "text-pokedex": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
   "button-pokedex": "Project details",
   "button-debugger": "Project details",
   "button-join": "Project details"
+},
+
+"thoughts": {
+  "words": "IN THEIR WORDS",
+  "headline": "Colleagues' Thoughts",
+  "cardOneText": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+  "cardOneName": "Tobias Lange",
+  "cardOnePosition": "Frontend Developer",
+  "cardTwoText": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm.",
+  "cardTwoName": "Maria Schäfer",
+  "cardTwoPosition": "Frontend Developer",
+  "cardThreeText": "Michael was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals",
+  "cardThreeName": "David Braun",
+  "cardThreePosition": "Frontend Developer",
+  "profile": "Profile"
+},
+
+"contact": {
+  "contactMe": "CONTACT ME",
+  "headline": "Ready to work together?",
+  "contactText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work. Feel free to get in touch with your project details. I'd love the opportunity to help create a website that meets your needs!",
+  "name": "What`s your name?",
+  "email": "What`s your email?",
+  "message": "How can I help you?",
+  "privacyPolicy": "I've read the and agree to the processing of my data as outlined.",
+  "privacyPolicyLink": "privacy policy",
+  "accept": "Please accept the privacy policy",
+  "send": "Send"
 }
 }

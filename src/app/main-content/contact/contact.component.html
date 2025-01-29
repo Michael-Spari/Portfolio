@@ -1,14 +1,9 @@
 <section>
     <div class="contactMainFrame">
         <div class="leftFrame">
-            <div class="contactMe"><p>CONTACT ME</p></div>
-            <div class="headLine"><p>Ready to work together?</p></div>
-            <div class="contactText"><p>
-                Contact me through this form, I am interested in hearing from you, 
-                knowing your ideas and contributing to your projects with my work. 
-                <br><br>
-                Feel free to get in touch with your project details. 
-                I'd love the opportunity to help create a website that meets your needs!</p></div>
+            <div class="contactMe"><p>{{ 'contact.contactMe' | translate }}</p></div>
+            <div class="headLine"><p>{{ 'contact.headline' | translate }}</p></div>
+            <div class="contactText"><p>{{ 'contact.contactText' | translate }}</p></div>
             <div class="arrow"><img src="assets/icon/contact/arrowRight.png"></div>
         </div>
             <div class="rightFrame">
@@ -33,18 +28,18 @@
                     <div class="contactRows">
                         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="contactFields">
-                            <div class="headline"><label for="name">What`s your name?</label></div>
+                            <div class="headline"><label for="name">{{ 'contact.name' | translate }}</label></div>
                             <input [(ngModel)]="contactData.name" id="name" name="name" class="inputField" type="text" placeholder="Your name goes here" required>
                         </div>
                         <div class="contactFields">
-                            <div class="headline"><label for="email">What`s your email?</label></div>
+                            <div class="headline"><label for="email">{{ 'contact.email' | translate }}</label></div>
                             <input [(ngModel)]="contactData.email" id="email" name="email" class="inputField" type="text" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                             <!-- @if (!email.valid && email.touched && email.disabled) {
                                 <span>Please enter a email</span>
                             } -->
                         </div>
                         <div class="contactFields">
-                            <div class="headline"><label for="message">How can I help you?</label></div>
+                            <div class="headline"><label for="message">{{ 'contact.message' | translate }}</label></div>
                             <input #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" class="inputField" type="text" placeholder="Hello Lukas, I am interested in..." required>
                             @if (!message.valid && message.touched && message.disabled) {
                                 <span>Please enter a message</span>
@@ -52,11 +47,10 @@
                         </div>
                         <div class="agreeField">
                             <input type="checkbox" id="agree" class="checkField" name="agree">
-                            <label for="agree">I've read the <a href="">privacy policy</a> 
-                                  and agree to the processing of my data as outlined.</label>  
+                            <label for="agree">{{ 'contact.privacyPolicy' | translate }}<a href="">{{ 'contact.privacyPolicyLink' | translate }}</a></label>  
                         </div>
-                        <div class="pleaseAccept"><p>Please accept the privacy policy</p></div>
-                        <div class="sendButton"><input type="submit" value="Send" class="sendBtn"></div>
+                        <div class="pleaseAccept"><p>{{ 'contact.accept' | translate }}</p></div>
+                        <div class="sendButton"><input type="submit" value="{{ 'contact.send' | translate }}" class="sendBtn"></div>
                         </form>
                     </div>
                 </div>

@@ -7,31 +7,85 @@ section {
     margin: 0 auto;
     background-color: whitesmoke;
 }
+p {
+    margin: 0px;
+}
 
 .aboutMe {
     font-size: 64px;
     font-weight: 700;
+    margin-top: 20px;
+}
+
+.leftContent {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    position: relative;
+    box-sizing: content-box;
+    flex-direction: column;
+    width: 560px;
+    height: 550px;
+    background-color: whitesmoke;
+    border: 0px solid blue;
+}
+
+.based {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('/assets/img/aboutme/yellow.png');
+    position: absolute;
+    top: 0px;
+    font-size: 18px;
+    color: whitesmoke;
+    width: 560px;
+    height: 170px;
+    transform: rotate(-4deg);
+    z-index: 3;
+}
+
+.locate {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('/assets/img/aboutme/blue.png');
+    position: absolute;
+    top: 132px;
+    font-size: 18px;
+    color: whitesmoke;
+    width: 560px;
+    height: 152px;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.remote {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    background-image: url('/assets/img/aboutme/orange.png');
+    position: absolute;
+    top: 224px;
+    font-size: 18px;
+    color: whitesmoke;
+    width: 560px;
+    height: 170px;
+    transform: rotate(4deg);
+    z-index: 1;
 }
 
 .lineBlue {
     width: 303px;
     height: 20px;
+    margin-bottom: 40px;
     overflow: hidden;
     transition: width 0.02s ease;
     animation: expandWidth 6s infinite; //
-    position: relative; // Ensure the position of the element does not change
 }
 
-@keyframes expandWidth {
-    0%, 42%, 100% {
-        width: 303px;
-        height: 20px;
-    }
-    50%, 92% {
-        width: 0px;
-        height: 20px;
-    }
-}
+// @keyframes expandWidth {
+//     0%, 42%, 100% {
+//         width: 303px;
+//         height: 20px;
+//     }
+//     50%, 92% {
+//         width: 0px;
+//         height: 20px;
+//     }
+// }
 
 .letsTalk {
     border: 1px solid black;
@@ -62,37 +116,26 @@ section {
     border: 0px solid red;
 }
 
-.leftContent {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    flex-direction: column;
-    width: 560px;
-    height: 400px;
-    background-color: whitesmoke;
-    border: 0px solid blue;
-}
-
 .rightContent {
-    @include dFlex($jc: center, $ai: flex-start, $g: 0px);
+    @include dFlex($jc: space-around, $ai: flex-start, $g: 0px);
     flex-direction: column;
     width: 560px;
-    height: 432px;
+    height: 560px;
     background-color: whitesmoke;
     border: 0px solid green;
 }
 
 .rightContentTop {
-    @include dFlex($jc: flex-start, $ai: flex-start, $g: 0px);
+    @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
     flex-direction: column;
     width: 100%;
-    height: 40%;
     border: 0px solid yellow;
 }
 
 .rightContentMiddle {
     @include dFlex($jc: center, $ai: flex-start, $g: 0px);
     width: 100%;
-    height: 40%;
-    border: 0px solid orange;
+    // border: 0px solid orange;
 }
 
 .rightContentBottom {
