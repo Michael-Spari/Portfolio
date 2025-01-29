@@ -11,6 +11,21 @@ section {
 
 }
 
+.gitHub {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column-reverse;
+}
+
+.linkedIn {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column-reverse;
+}
+
+.email {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column-reverse;
+}
+
 .logoRow {
     width: 100%;
     padding-bottom: 10px;
@@ -28,42 +43,6 @@ section {
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
-}
-
-.btnAnimation {
-    cursor: pointer;
-    border-radius: 100px;
-    width: 84px;
-    height: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    color: whitesmoke;
-    background-color: transparent;
-    border: none;
-    overflow: hidden;
-    transition: color 0.2s;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 100%;
-        background-color: #3355FF;
-        transition: width 0.2s, left 0.2s;
-        z-index: -1;
-    }
-
-    &:hover::before {
-        width: 100%;
-        left: 0;
-    }
-
-    &:hover {
-        color: whitesmoke;
-        transform: scaleX(1.1);
-    }
 }
 
 a {

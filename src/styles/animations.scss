@@ -1,0 +1,104 @@
+
+// Footer Animations
+
+.btnAnimation:hover ~ .gitCat {
+    position: relative;
+    animation: moveRotate 0.3s linear forwards;
+}
+
+.btnAnimation:not(:hover) ~ .gitCat {
+    position: relative;
+    animation: reverseMoveRotate 0.3s linear forwards;
+}
+
+.btnAnimation:hover ~ .linked {
+    position: relative;
+    animation: moveRotate 0.3s linear forwards;
+}
+
+.btnAnimation:not(:hover) ~ .linked {
+    position: relative;
+    animation: reverseMoveRotate 0.3s linear forwards;
+}
+
+
+.btnAnimation:hover ~ .mail {
+    position: relative;
+    animation: moveRotate 0.3s linear forwards;
+}
+
+.btnAnimation:not(:hover) ~ .mail {
+    position: relative;
+    animation: reverseMoveRotate 0.3s linear forwards;
+}
+
+@keyframes moveRotate {
+    0% {
+        left: 0;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 50px;
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverseMoveRotate {
+    0% {
+        left: 50px;
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 0;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+}
+
+.btnAnimation {
+    cursor: pointer;
+    border-radius: 100px;
+    width: 107px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    transition: color 0.1s, transform 0.05s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        background-color: #3355FF;
+        transition: width 0.05s, left 0.05s;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+    &:hover {
+        color: whitesmoke;
+        transform: scaleX(1);
+    }
+
+    &:not(:hover)::before {
+        width: 0;
+        left: 50%;
+    }
+
+    &:not(:hover) {
+        transform: scaleX(1);
+    }
+}
