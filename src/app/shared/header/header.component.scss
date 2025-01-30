@@ -3,13 +3,22 @@
 nav {
     font-family: "Bricolage Grotesque";
     max-width: 1440px;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .navContainer {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
     height: auto;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
 }
 
 .languageTextDe,

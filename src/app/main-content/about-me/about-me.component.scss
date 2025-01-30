@@ -1,40 +1,49 @@
 @import './../../../styles.scss';
 section {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    max-width: 1440px;
-    height: 720px;
+    box-sizing: content-box;
     width: 100%;
+    height: 720px;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
 }
-p {
-    margin: 0px;
+
+.mainFrame {
+    max-width: 1440px;
+    width: 100%; // Nimmt 100% der verfügbaren Breite ein
+    box-sizing: border-box; // Padding und Border werden in der Breite berücksichtigt
+    margin: 0 auto; // Zentriert die Section bei größeren Viewports
+    border: 1px solid green;
+}
+.mainContent {
+    @include dFlex($jc: center, $ai: center, $g: 80px);
+    font-family: 'Bricolage Grotesque';
+    box-sizing: content-box;
+    width: 100%;
+    border: 1px solid red;
 }
 
 .aboutMe {
     font-size: 64px;
     font-weight: 700;
-    margin-top: 20px;
 }
 
 .leftContent {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    position: relative;
+    // @include dFlex($jc: center, $ai: center, $g: 0px);
+    // position: relative;
     box-sizing: content-box;
     flex-direction: column;
-    width: 560px;
-    height: 550px;
-    background-color: whitesmoke;
-    border: 0px solid blue;
+    // width: 560px;
+    // height: 550px;
+    border: 2px solid blue;
 }
 
 .based {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
+    // @include dFlex($jc: center, $ai: center, $g: 0px);
     background-image: url('/assets/img/aboutme/yellow.png');
-    position: absolute;
-    top: 0px;
+    // position: absolute;
+    // top: 0px;
     font-size: 18px;
-    color: whitesmoke;
     width: 560px;
     height: 170px;
     transform: rotate(-4deg);
@@ -44,10 +53,9 @@ p {
 .locate {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     background-image: url('/assets/img/aboutme/blue.png');
-    position: absolute;
-    top: 132px;
+    // position: absolute;
+    // top: 132px;
     font-size: 18px;
-    color: whitesmoke;
     width: 560px;
     height: 152px;
     transform: rotate(0deg);
@@ -57,10 +65,9 @@ p {
 .remote {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     background-image: url('/assets/img/aboutme/orange.png');
-    position: absolute;
-    top: 224px;
+    // position: absolute;
+    // top: 224px;
     font-size: 18px;
-    color: whitesmoke;
     width: 560px;
     height: 170px;
     transform: rotate(4deg);
@@ -70,22 +77,10 @@ p {
 .lineBlue {
     width: 303px;
     height: 20px;
-    margin-bottom: 40px;
     overflow: hidden;
     transition: width 0.02s ease;
-    animation: expandWidth 6s infinite; //
+    animation: expandWidth 6s infinite;
 }
-
-// @keyframes expandWidth {
-//     0%, 42%, 100% {
-//         width: 303px;
-//         height: 20px;
-//     }
-//     50%, 92% {
-//         width: 0px;
-//         height: 20px;
-//     }
-// }
 
 .letsTalk {
     border: 1px solid black;
@@ -108,39 +103,22 @@ p {
     }
 }
 
-.mainContent {
-    @include dFlex($jc: center, $ai: center, $g: 80px);
-    font-family: 'Bricolage Grotesque';
-    width: 100%;
-    background-color: whitesmoke;
-    border: 0px solid red;
-}
-
 .rightContent {
-    @include dFlex($jc: space-around, $ai: flex-start, $g: 0px);
-    flex-direction: column;
-    width: 560px;
-    height: 560px;
+    // width: 560px;
+    // height: 560px;
     background-color: whitesmoke;
-    border: 0px solid green;
+    border: 1px solid green;
 }
 
 .rightContentTop {
-    @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
     flex-direction: column;
-    width: 100%;
-    border: 0px solid yellow;
+    border: 1px solid yellow;
 }
 
 .rightContentMiddle {
-    @include dFlex($jc: center, $ai: flex-start, $g: 0px);
-    width: 100%;
-    // border: 0px solid orange;
+    border: 3px solid orange;
 }
 
 .rightContentBottom {
-    @include dFlex($jc: flex-end, $ai: flex-end, $g: 0px);
-    width: 100%;
-    height: 20%;
-    border: 0px solid purple;
+    border: 1px solid purple;
 }

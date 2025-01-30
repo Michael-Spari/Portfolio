@@ -1,26 +1,29 @@
 @import './../../../styles.scss';
 section {
     height: 100vh;
-    max-width: 1440px; // Maximale Breite ist 1440px
     width: 100%; // Nimmt 100% der verfügbaren Breite ein
     box-sizing: border-box; // Padding und Border werden in der Breite berücksichtigt
     margin: 0 auto; // Zentriert die Section bei größeren Viewports
-    background-image: url('./../../../assets/img/backgrounds/01_Hero.png');
+    background-image: url('./../../../assets/img/backgrounds/01_Hero.jpg');
     background-size: cover;
+    background-position: bottom;
     background-color: whitesmoke;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    // border: 10px solid blue;
-    // padding: 0 16px; // Seitlicher Abstand für kleine Bildschirme
 }
 
 .mainFrame {
-    @include dFlex($jc: space-around, $ai: flex-end, $g: 0px);
+    @include dFlex($jc: center, $ai: center, $g: 0px);
     box-sizing: border-box;
-    max-width: 1440px;
+    width: 100%;
     height: 650px;
-    // border: 3px solid whitesmoke;
+}
+
+.centerMain {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    max-width: 1440px;
+    width: 100%;
 }
 
 .masterContainerFrame {
@@ -28,14 +31,12 @@ section {
     max-width: 1440px;
     height: 600px;
     margin: 0 auto; // Zentriert den Container
-    // border: 5px solid green;
     display: flex;
     align-items: center;
 }
 
 .container {
     @include dFlex($jc: space-between, $ai: space-between, $g: 24px);
-    // border: 3px solid salmon;
     width: 100%;
     flex-direction: column;
     color: whitesmoke;
