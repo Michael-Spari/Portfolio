@@ -1,0 +1,191 @@
+
+.aboutMe {
+    position: relative;
+    display: inline-block;
+    width: 105px;
+    height: 45px;
+    overflow: hidden;
+    .aboutMeText {
+        position: absolute;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        mix-blend-mode: difference;
+    }
+    .aboutMeOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        z-index: 1;
+        img {
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
+        }
+    }
+    &:hover {
+        .aboutMeOutLine {
+            height: 42px;
+        }
+    }
+}
+
+.skills {
+    position: relative;
+    display: inline-block;
+    width: 105px;
+    height: 45px;
+    overflow: hidden;
+    .skillsText {
+        position: absolute;
+        mix-blend-mode: difference;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+    }
+    .skillsOutLine {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.4s ease;
+        z-index: 1;
+        img {
+            width: 105px;
+            height: 43px;
+            object-fit: cover;
+        }
+    }
+    &:hover {
+        .skillsOutLine {
+            width: 105px;
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    
+    img {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        transition: left 0.2s ease-in-out;
+    }
+    img + img {
+        top: 8px;
+    }
+    .switch-animate {
+        left: 16px;
+    }
+    .switch-reverse {
+        left: 0;
+    }
+}
+.switch-active {
+    animation: switch 0.2s linear forwards;
+}
+
+@keyframes switch {
+    0% { left: 0; }
+    100% { left: 16px; }
+}
+@keyframes reverseSwitch {
+    0% { left: 16px; }
+    100% { left: 0; }
+}
+
+.languageSwitchEn {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    .languageTextEn {
+        background-color: transparent;
+        position: relative;
+        border: none;
+        height: 32px;
+        width: 40px;
+        font-size: 18px;
+        color: #FFFFFF;
+        z-index: 2;
+        cursor: pointer;
+        &.active {
+            color: #F87A55;
+        }
+    }
+    .deOutLine {
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.2s ease;
+        z-index: 1;
+        img {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            }
+        }
+        &:hover {
+            .deOutLine {
+                height: 36px;
+                width: 36px;
+            }
+        }
+}
+
+.languageSwitchDe {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    .languageTextDe {
+        background-color: transparent;
+        position: absolute;;
+        border: none;
+        height: 32px;
+        width: 40px;
+        font-size: 18px;
+        color: #FFFFFF;
+        z-index: 2;
+        cursor: pointer;
+        &.active {
+            color: #F87A55;
+        }
+    }
+    .deOutLine {
+        position: absolute;
+        top: -2px;
+        left: 2px;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.2s ease;
+        z-index: 1;
+        img {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+        }
+    }
+    &:hover {
+        .deOutLine {
+            height: 36px;
+            width: 36px;
+        }
+    }
+}

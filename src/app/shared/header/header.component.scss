@@ -3,160 +3,49 @@
 nav {
     font-family: "Bricolage Grotesque";
     max-width: 1440px;
-    // border: 10px solid yellow;
     padding-left: 5%;
     padding-right: 5%;
-
-    > img {
-        width: 64px;
-        height: 64px;
-    }
 }
 
 .navContainer {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
     height: auto;
-    // border: 1px solid red;
-    // opacity: 1;
+}
+
+.languageTextDe,
+.languageTextEn {
+    background-color: transparent;
+    border: none;
+    height: 32px;
+    width: 40px;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    &:disabled,
+    &.active {
+        color: #F87A55;
+        pointer-events: none;
+        cursor: default;
+    }
+    &:hover:not(.active):not(:disabled) { 
+        color: #FFA07A;
+    }
 }
 
 .languageSwitch {
     display: flex;
-}
-
-.languageTextEn {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    color: #F87A55;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.languageTextDe {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    color: #FFFFFF;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
-
-    img + img {
-        top: 0;
-        left: 0;
-    }
-}
-
-a {
-    text-decoration: none;
+    height: 30px;  
 }
 
 .nav-text {
     font-size: 18px;
     mix-blend-mode: difference;
     color: white;
-
 }
 
 .logo {
-    height: 120px;
-    
-}
-
-.aboutMe {
-    position: relative;
-    display: inline-block;
-    width: 105px;
-    height: 45px;
-    overflow: hidden;
-    mix-blend-mode: difference;
-
-    .aboutMeText {
-        position: absolute;
-        width: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        text-align: center;
-    }
-
-    .aboutMeOutLine {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0;
-        overflow: hidden;
-        transition: height 0.4s ease;
-        z-index: 1;
-
-        img {
-            width: 105px;
-            height: 43px;
-            object-fit: cover;
-        }
-    }
-
-    &:hover {
-        .aboutMeOutLine {
-            height: 42px;
-        }
-    }
-}
-
-.skills {
-    position: relative;
-    display: inline-block;
-    width: 105px;
-    height: 45px;
-    overflow: hidden;
-    mix-blend-mode: difference;
-
-    .skillsText {
-        position: absolute;
-        width: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        text-align: center;
-    }
-
-    .skillsOutLine {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        overflow: hidden;
-        transition: width 0.4s ease;
-        z-index: 1;
-
-        img {
-            width: 105px;
-            height: 43px;
-            object-fit: cover;
-        }
-    }
-
-    &:hover {
-        .skillsOutLine {
-            width: 105px;
-        }
-    }
+    height: 120px;   
 }
 
 

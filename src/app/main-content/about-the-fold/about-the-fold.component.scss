@@ -58,61 +58,16 @@ section {
 }
 
 .wavingHandDiv {
-    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
-    width: 240px;
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column-reverse;
 }
 
-.wavingHand {
-    padding-right: 50px;
-    opacity: 0;
-    transition: padding-right 0.4s, transform 0.4s, opacity 0.4s;
-}
-
-// Kombinierte Selektoren, um den Hover-Zustand zu erreichen
-.rowTopLeftTop:hover .wavingHand {
-    padding-right: 0;
-    transform: rotate(360deg);
-    opacity: 1;
-}
-
-.buttonhewe {
+.btnAnimation {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
     border: 1px solid whitesmoke;
-    border-radius: 100px;
-    background-color: black;
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 500;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 25px;
-    padding-right: 25px;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.4s, transform 0.4s;
-    transform-origin: left;
-    z-index: 1;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 100%;
-        background-color: #3355FF;
-        transition: width 0.4s, left 0.4s;
-        z-index: -1;
-    }
-
-    &:hover::before {
-        width: 100%;
-        left: 0;
-    }
-
-    &:hover {
-        color: whitesmoke;
-        transform: scaleX(1.1);
-    }
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .link {
@@ -267,7 +222,7 @@ section {
 }
 
 .rowTopLeft {
-    @include dFlex($jc: center, $ai: center, $g: 24px);
+    @include dFlex($jc: center, $ai: flex-start, $g: 24px);
     flex-direction: column;
     width: 65%;
     height: 100%;

@@ -1,7 +1,6 @@
 <nav>  
     <div class="navContainer">   
         <a routerLink=""><img class="logo" src="assets/logo/logo_ms_en_over.png" alt="logo" srcset="" onmouseover="this.src='assets/logo/logo_ms_en.png'" onmouseout="this.src='assets/logo/logo_ms_en_over.png'"></a>
-
         <div class="aboutMe">
             <div class="aboutMeText">
                 <a href="#aboutMe">
@@ -12,7 +11,6 @@
                     <img src="assets/icon/nav/en_de_btn/B.1 1.png" alt="About Me Icon">
                 </div>
         </div>
-
         <div class="skills">
             <div class="skillsText">
                 <a href="#mySkills"><span class="nav-text">{{ 'navi.skills' | translate }}</span></a>
@@ -21,16 +19,14 @@
                     <img src="assets/icon/nav/en_de_btn/B.1 2.png" alt="Skills Icon">
                 </div>
         </div>
-
         <div class="skills">
             <div class="skillsText">
                 <a href="#projects"><span class="nav-text">{{ 'navi.projects' | translate }}</span></a>
             </div>
-                <div class="skillsOutLine">
+                <div class="skillsOutLine"><br>
                     <img src="assets/icon/nav/en_de_btn/B.1 4.png" alt="Projects Icon">
                 </div>
         </div>
-
         <div class="skills">
             <div class="skillsText">
                 <a href="#contact"><span class="nav-text">{{ 'navi.contact' | translate }}</span></a>
@@ -39,17 +35,28 @@
                     <img src="assets/icon/nav/en_de_btn/B.1 3.png" alt="Contacts Icon">
                 </div>
         </div>
-        <div class="languageSwitch">
-            <div><button class="languageTextEn" (click)="changeLanguage('en')">EN</button></div>
-            <div class="switch">
-                <img src="assets/icon/nav/en_de_btn/Vector1.png" alt="en_de_btn" srcset="">
-                <img src="assets/icon/nav/en_de_btn/Vector.png" alt="en_de_btn" srcset="">
+            <div class="languageSwitch">
+                <div class="languageSwitchDe">
+                    <div>
+                        <button class="languageTextDe" [ngClass]="{ 'active': currentLanguage === 'de' }" (click)="changeLanguage('de')" [disabled]="currentLanguage === 'de'">DE</button>
+                    </div>
+                    <div class="deOutLine">
+                        <img src="assets/icon/nav/en_de_btn/de.png">
+                    </div>
+                </div>
+                <div class="switch">
+                    <img src="assets/icon/nav/en_de_btn/Vector1.png" alt="en_de_btn" srcset="">
+                    <img src="assets/icon/nav/en_de_btn/Vector.png" alt="en_de_btn" [ngClass]="{ 'switch-animate': isSwitched, 'switch-reverse': !isSwitched }">
+                </div>
+                <div class="languageSwitchEn">
+                    <div>
+                        <button class="languageTextEn" [ngClass]="{ 'active': currentLanguage === 'en' }" (click)="changeLanguage('en')" [disabled]="currentLanguage === 'en'">EN</button>
+                    </div>
+                    <div class="deOutLine">
+                        <img src="assets/icon/nav/en_de_btn/en.png">
+                    </div>
+                </div>
             </div>
-            <div><button class="languageTextDe" (click)="changeLanguage('de')">DE</button></div>
-        </div>
-
-
     </div>
 </nav>
 
-  
