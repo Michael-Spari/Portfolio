@@ -1,0 +1,11 @@
+.skillItemImage {
+    width: 72px;
+    height: 72px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    &:hover {
+        filter: grayscale(0%);
+        width: 56px;
+        height: 56px;
+    }
+}

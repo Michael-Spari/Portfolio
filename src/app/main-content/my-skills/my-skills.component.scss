@@ -6,9 +6,7 @@ section {
     background-position: bottom;
     background-repeat: no-repeat;
     margin: 0 auto;
-    height: 1040px;
-    width: 100%; // Nimmt 100% der verfügbaren Breite ein
-    box-sizing: border-box; // Padding und Border werden in der Breite berücksichtigt
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -16,10 +14,6 @@ section {
     font-size: 20px;
     margin-bottom: 10px;
     color: whitesmoke;
-}
-
-.skillSetContainer {
-    position: relative;
 }
 
 .skillSet {
@@ -32,80 +26,104 @@ section {
 
 .skillsContent {
     @include dFlex($jc: center, $ai: center, $g: 0px);
+    box-sizing: border-box;
+    flex-direction: column;
     font-family: 'Bricolage Grotesque';
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 144px;
+    padding-bottom: 144px;
     max-width: 1440px;
     width: 100%;
     height: 100%;
-    border: 1px solid brown;
-}
-
-.skillTextMiddle {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    background-image: url('./../../../assets/icon/skills/paper.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px solid yellow;
-}
-
-.skillText {
-    font-size: 18px;
-    padding-left: 5%;
 }
 
 .skillSetContainer {
+    position: relative;
+    border: 0px solid blue;
+}
+
+.orangeBorder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px solid orange;
+    >img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.skillTextTop {
+    @include dFlex($jc: center, $ai: flex-start, $g: 0px);
+    background-image: url('./../../../assets/icon/skills/paper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin-left: 5%;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 656px;
+    width: 100%;
+    height: 144px;
+}
+
+.skillSetIcons {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 4px solid blue;
+    box-sizing: border-box;
+    margin-left: 20%;
+    max-width: 700px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
 .skillItem {
     @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column;
     width: 130px;
     height: 130px;
-    position: relative;
-    > img {
-        width: 72px;
-        height: 72px;
-        transform: translate(-50%, -50%);
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-        &:hover {
-            filter: grayscale(0%);
-            width: 56px;
-            height: 56px;
-        }
-    }
+}
+
+.imageContainer {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    padding-bottom: 4px;
+    width: 72px;
+    height: 72px;
 }
 
 .skillIconText {
-    @include dFlex($jc: center, $ai: flex-end, $g: 0px);
+    @include dFlex($jc: center, $ai: center, $g: 0px);
     font-size: 18px;
     font-weight: 400;
     color: whitesmoke;
-    position: absolute;
 }
 
 .skillsContentLeft {
     @include dFlex($jc: flex-start, $ai: flex-end, $g: 0px);
     flex-direction: column;
-    border: 2px solid yellow;
+    box-sizing: border-box;
+    border: 0px solid yellow;
 }
 
-.skillsContentMiddle {
+.skillsContentTop {
     @include dFlex($jc: flex-start, $ai: center, $g: 0px);
-    flex-direction: column;
-    border: 1px solid red;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.skillsContentRight {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 1px solid blue;
+.skillsContentBottom {
+    @include dFlex($jc: flex-end, $ai: flex-start, $g: 0px);
+    margin-top: 30px;
+    width: 100%;
 }
 
 .skillButtonRight {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 3px solid green;
+    margin-top: 30px;
     > img {
         cursor: pointer;
         transition: transform 0.3s ease;

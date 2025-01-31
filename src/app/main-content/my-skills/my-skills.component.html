@@ -1,29 +1,32 @@
 <section>
     <div class="skillsContent">
-        <div class="skillsContentLeft">
-            <p class="myStack">{{ 'skills.stack' | translate }}</p>
-            <div class="skillSetContainer">
-                <p class="skillSet">{{ 'skills.title' | translate }}</p>
-                <img src="assets/icon/skills/orangeLine.png">
-            </div> 
-        </div>
-        <div class="skillsContentMiddle">
-            <div class="skillTextMiddle">
-                <p class="skillText">{{ 'skills.text' | translate }}</p>
+
+        <div class="skillsContentTop">
+            <div class="skillsContentLeft">
+                <p class="myStack">{{ 'skills.stack' | translate }}</p>
+                <div class="skillSetContainer">
+                    <p class="skillSet">{{ 'skills.title' | translate }}</p>
+                    <div class="orangeBorder"><img src="assets/icon/skills/orangeLine.png"></div>
+                </div> 
             </div>
-            <div class="skillSetContainer">
+            <div class="skillTextTop">
+                <p>{{ 'skills.text' | translate }}</p>
+            </div>
+        </div>
+        <div class="skillsContentBottom">
+            <div class="skillSetIcons">
                 @for (skill of skills; track skill) {
                     <div class="skillItem">
-                        <img [src]="skill.icon" alt="{{skill.name}} icon">
+                        <div class="imageContainer"><img class="skillItemImage" [src]="skill.icon" alt="{{skill.name}} icon"></div>
                         <div class="skillIconText"><p>{{skill.name}}</p></div>
                     </div>
                 }
             </div>
-        </div>
-        <div class="skillsContentRight">
-            <div class="skillButtonRight" (click)="toggleImage()">
-                <img [src]="showFirstImage ? 'assets/icon/skills/pullMe1.png' : 'assets/icon/skills/pullMe3.png'">
+                <div class="skillButtonRight" (click)="toggleImage()">
+                    <img [src]="showFirstImage ? 'assets/icon/skills/pullMe1.png' : 'assets/icon/skills/pullMe3.png'">
             </div>
         </div>
+
+
     </div>
 </section>
