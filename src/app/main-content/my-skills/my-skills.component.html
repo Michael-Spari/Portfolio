@@ -15,7 +15,8 @@
         </div>
         <div class="skillsContentBottom">
             <div class="skillSetIcons">
-                @for (skill of skills; track skill) {
+                @for (skill of skills; track skill) 
+                {
                     <div class="skillItem">
                         <div class="imageContainer"><img class="skillItemImage" [src]="skill.icon" alt="{{skill.name}} icon"></div>
                         <div class="skillIconText"><p>{{skill.name}}</p></div>

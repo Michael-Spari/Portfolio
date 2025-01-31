@@ -4,7 +4,7 @@ section {
     font-family: 'Bricolage Grotesque';
     background-color: whitesmoke;
     flex-direction: column;
-    max-width: 1440px;
+    max-width: 100%;
     height: 840px;
     margin: 0 auto;
 }
@@ -13,7 +13,8 @@ section {
     @include dFlex($jc: center, $ai: flex-end, $g: 0px);
     flex-direction: column;
     font-size: 62px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 200px;
     margin-bottom: 20px;
 }
@@ -86,8 +87,10 @@ section {
     position: absolute;
     top: 30px;
     left: 10px;
-    width: 512px;
-    height: 320px;
+    max-width: 512px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
     transform: rotate(-4deg);
     z-index: 2;
 }
@@ -101,8 +104,10 @@ section {
     position: absolute;
     top: 70px;
     left: 400px;
-    width: 512px;
-    height: 320px;
+    max-width: 512px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
     z-index: 1;
 }
 
@@ -115,8 +120,10 @@ section {
     position: absolute;
     top: 30px;
     left: 680px;
-    width: 512px;
-    height: 320px;
+    max-width: 512px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
     transform: rotate(4deg);
     z-index: 0;
 }

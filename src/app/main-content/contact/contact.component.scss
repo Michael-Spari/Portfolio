@@ -11,27 +11,35 @@ span {
 }
 
 section {
-    @include dFlex($jc: flex-end, $ai: space-around, $g: 0px);
+    @include dFlex($jc: center, $ai: space-around, $g: 0px);
     background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
-    flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: whitesmoke;
     font-family: 'Bricolage Grotesque';
     padding-top: 100px;
     color: whitesmoke;
-    max-width: 1440px;
-    height: 1010px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.mainFrame {
+    display: flex;
+    border: 0px solid #F7C518;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .contactMainFrame {
     @include dFlex($jc: space-around, $ai: flex-start, $g: 0px);
+    border: 0px solid green;
     width: 100%;
 }
 
 .leftFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
+    border: 0px solid red;
     flex-direction: column;
     width: 560px;
 }
@@ -59,6 +67,7 @@ section {
 
 .rightFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
+    border: 0px solid blue;
     width: 468px;
 }
 
@@ -180,4 +189,10 @@ a {
         transform: translate(2px, 4px);
     }
 }
-
+ .footerDiv {
+    display: flex;
+    border: 10px solid yellow;
+    max-width: 1440px;
+    width: 100%;
+    height: 500px;
+ }
