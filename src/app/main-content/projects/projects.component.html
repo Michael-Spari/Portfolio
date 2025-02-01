@@ -8,11 +8,12 @@
             <p>{{ 'projects.text-all' | translate }}</p>
         </div>
         <div class="projectsDescription">
-            <div class="laptop">
-                <img class="sticker" src="assets/img/projects/Sticker.png">
-                <img class="projectImage" src="assets/img/projects/laptop1.png">
-                <div class="rowBottomBottom"><button class="projectDetails">{{ 'projects.button-join' | translate }}</button></div>
+            <div class="image-container">
+                <div class="overlay"></div>
+                <img class="floating-laptop" src="assets/img/projects/laptop1.png">
+                <button class="hover-button">{{ 'projects.button-join' | translate }}</button>
             </div>
+            <div class="sticker"><img src="assets/img/projects/Sticker.png"></div>
             <div class="joinText">
                 <b><h1>{{ 'projects.headline-join' | translate }}</h1></b>
                 <p>{{ 'projects.text-join' | translate }}</p>
@@ -23,8 +24,11 @@
     <div class="bottomRowProjects">
 
         <div class="projectFrame">
-            <div><img class="projectImage" src="assets/img/projects/theDebugger.png"></div>
-            <div class="detailButton"><button routerLink="details" class="projectDetails">{{ 'projects.button-debugger' | translate }}</button></div>
+            <div class="image-container">
+                <img src="assets/img/projects/theDebugger.png">
+                <div class="overlay"></div>
+                <button routerLink="details" class="hover-button">{{ 'projects.button-debugger' | translate }}</button>
+            </div>
             <div class="projectText">
                 <b><h1>{{ 'projects.headline-debugger' | translate }}</h1></b>
                     <p>{{ 'projects.text-debugger' | translate }}</p>
@@ -32,8 +36,11 @@
         </div>
 
         <div class="projectFrame">
-            <div><img class="projectImage" src="assets/img/projects/daBubble.png"></div>
-            <div class="detailButton"><button class="projectDetails">{{ 'projects.button-pokedex' | translate }}</button></div>
+            <div class="image-container">
+                <img src="assets/img/projects/daBubble.png" alt="Projektbild">
+                <div class="overlay"></div> 
+                <button class="hover-button">{{ 'projects.button-pokedex' | translate }}</button>
+            </div>
             <div class="projectText">
                 <b><h1>{{ 'projects.headline-pokedex' | translate }}</h1></b>
                     <p>{{ 'projects.text-pokedex' | translate }}</p>
