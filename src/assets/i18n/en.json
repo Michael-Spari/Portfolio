@@ -4,17 +4,17 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contacts" 
-},
+  },
 
 "about-the-fold": {
   "button": "Get in Touch"
-},
+  },
 
 "skills": {
   "stack": "MY STACK",
   "title": "Skill set",
   "text": "I have gained experience in building projects with a variety of frontend technologies and concepts. With a strong growth mindset, I’m always exploring new areas to enhance my skill set."
-},
+  },
 
 "about-me": {
   "based": "Based in Bendorf Sayn",
@@ -24,9 +24,9 @@
   "subline": "About me",
   "text": "Hi there! I'm Michael, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions.Let’s collaborate and build something remarkable together!",
   "button": "Let`s talk"
-},
+  },
 
-"projects": {
+"project": {
   "text-craft": "MY CRAFT",
   "headline": "Projects",
   "text-all": "Take a look at some of my projects and see my front-end skills in action. Each project highlights my approach to building responsive, user-friendly designs with efficient code.",
@@ -41,6 +41,13 @@
   "button-join": "Project details"
 },
 
+  "projects": {
+    "debugger": {
+      "description": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and sprays to fight against the crazy bugs.",
+      "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+    }
+  },
+
 "thoughts": {
   "words": "IN THEIR WORDS",
   "headline": "Colleagues' Thoughts",
@@ -54,7 +61,7 @@
   "cardThreeName": "David Braun",
   "cardThreePosition": "Frontend Developer",
   "profile": "Profile"
-},
+  },
 
 "contact": {
   "contactMe": "CONTACT ME",
@@ -67,5 +74,14 @@
   "privacyPolicyLink": "privacy policy",
   "accept": "Please accept the privacy policy",
   "send": "Send"
-}
+  },
+
+"detail": {
+  "goback": "Go Back",
+  "description": "Description",
+  "detailheadline": "Implementation Details",
+  "duration": "Duration:",
+  "next": "Next Project"
+  }
+
 }

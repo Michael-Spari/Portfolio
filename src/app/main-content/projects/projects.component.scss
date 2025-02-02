@@ -13,7 +13,6 @@ section {
     background-color: #FFFFFF;
     max-width: 1440px;
     width: 100%;
-    border: 0px solid red;
 }
 
 .bottomRowProjects {
@@ -22,13 +21,17 @@ section {
     max-width: 1440px;
     width: 100%;
     height: 600px;
-    border: 0px solid green;
 }
 
 .projectsTitle {
     width: 560px;
     margin-bottom: 20px;
     font-size: 18px;
+}
+
+.projectText {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .yellowLine {
@@ -42,7 +45,6 @@ section {
     position: relative;
     width: 560px;
     font-size: 18px;
-    border: 1px solid red;
 }
 
 .sticker {
@@ -51,12 +53,10 @@ section {
     width: 100%;
     z-index: 1;
     bottom: 140px;
-    left: 0;
-    border: 0px solid yellow;
+    left: 5px;
 }
 
 .projectFrame {
     position: relative;
     width: 560px;
-    border: 0px solid #F87A55;
 }

@@ -11,38 +11,53 @@ section {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-a {
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-
-    &:hover {
-        color: #F7C518;
-    }
 }
 
 .goBack {
     @include dFlex($jc: flex-start, $ai: flex-start, $g: 10px);
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    a {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+            color: #F87A55;
+        }
+    }
 }
 
 .goNext {
     @include dFlex($jc: flex-end, $ai: flex-start, $g: 10px);
-    // margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 80px;
+    button {
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        &:hover {
+            color: #F7C518;
+        }
+    }
 }
 
 .detailFrame {
-    @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
+    @include dFlex($jc: space-between, $ai: flex-start, $g: 48px);
+    padding-left: 120px;
+    padding-right: 120px;
+    border: 1px solid green;
 }
 
 .detailFrameLeft {
-    width: 488px;
-    margin-top: 0px;
+    max-width: 488px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
 }
 
 .headline {
@@ -55,6 +70,7 @@ a {
 }
 
 .description {
+    padding-top: 30px;
     font-size: 24px;
     font-weight: 700;
 }
@@ -86,7 +102,7 @@ a {
 
 .detailFrameRight {
     @include dFlex($jc: flex-start, $ai: center, $g: 10px);
-    // width: 560px;
+    border: 1px solid blue;
     height: 100%;
 
 }
@@ -100,8 +116,8 @@ a {
 }
 
 .projectImage {
-    width: 560px;
-    height: 400px;
+    max-width: 560px;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -143,15 +159,11 @@ a {
 }
 
 .buttonFrame {
-    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
+    @include dFlex($jc: flex-end, $ai: center, $g: 40px);
+    margin-top: 60px;
     width: 100%;
+    border: 1px solid violet;
 
-}
-
-.sendButton {
-    @include dFlex($jc: flex-end, $ai: flex-start, $g: 0px);
-    margin-left: 40px;
-    margin-top: 50px;
 }
 
 .gitandLiveBtn {
@@ -159,13 +171,18 @@ a {
     border-radius: 100px;
     background-color: transparent;
     color: whitesmoke;
-    width: 110px;
     font-size: 18px;
     font-weight: 500;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
     box-shadow: 2px 4px whitesmoke;
     transition: background-color 0.1s, box-shadow 0.2s, transform 0.2s;
+    >a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 
     &:hover {
         background-color: #F87A55;

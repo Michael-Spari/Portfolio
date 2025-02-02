@@ -25,8 +25,8 @@
     "title": "Fähigkeiten",
     "text": "Ich habe Erfahrung im Aufbau von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um meine Fähigkeiten zu erweitern."
   },
-      
-  "projects": {
+
+  "project": {
     "text-craft": "MEIN HANDWERK",
     "headline": "Projekte",
     "text-all": "Werfen Sie einen Blick auf einige meiner Projekte und sehen Sie meine Frontend-Fähigkeiten in Aktion. Jedes Projekt hebt meinen Ansatz hervor, responsive, benutzerfreundliche Designs mit effizientem Code zu erstellen.",
@@ -39,6 +39,13 @@
     "button-pokedex": "Projekt Details",
     "button-debugger": "Projekt Details",
     "button-join": "Projekt Details"
+  },
+      
+  "projects": {
+    "debugger": {
+      "description": "Springe, renne und werfe in einem objektorientierten Spiel. Hilf Michael, Münzen zu sammeln und Sprays zu finden, um gegen die verrückten Bugs zu kämpfen.",
+      "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
+    }
   },
 
   "thoughts": {
@@ -67,5 +74,13 @@
   "privacyPolicyLink": "Datenschutzerklärung",
   "accept": "Bitte akzeptieren Sie die Datenschutzerklärung",
   "send": "Senden"
-}
+  },
+
+  "detail": {
+  "goback": "Zurück",
+  "description": "Beschreibung",
+  "detailheadline": "Implementierungsdetails",
+  "duration": "Dauer:",
+  "next": "Nächste Projekt"
+  }
 }
