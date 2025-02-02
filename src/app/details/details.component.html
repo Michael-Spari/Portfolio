@@ -54,7 +54,9 @@
                              onmouseout="this.src='assets/logo/logo_ms_en_over.png'">
                     </div>
                     <div class="buttonFrame">
-                        <button class="gitandLiveBtn">GitHub</button>
+                        <button class="gitandLiveBtn">
+                            <a [href]="projects[currentIndex].gitHub">GitHub</a>
+                        </button>
                         <button class="gitandLiveBtn">
                             <a [href]="projects[currentIndex].liveTest">Live Test</a>
                         </button>

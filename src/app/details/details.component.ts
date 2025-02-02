@@ -31,6 +31,7 @@ export class DetailsComponent {
       image: "assets/img/projects/theDebugger.png",
       logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
+      gitHub: "https://github.com/Michael-Spari/debugg",
       liveTest: "theDebugger/index.html"
     },
     {
@@ -49,6 +50,7 @@ export class DetailsComponent {
       image: "assets/img/projects/join.png",
       logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
+      gitHub: "https://github.com/Michael-Spari",
       liveTest: "join/index.html"
     },
     {
@@ -65,6 +67,7 @@ export class DetailsComponent {
       image: "assets/img/projects/pokedex.png",
       logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
+      gitHub: "https://github.com/Michael-Spari/pokedex_ms",
       liveTest: "pokedex/index.html"
     }
   ];
