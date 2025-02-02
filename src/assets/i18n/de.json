@@ -34,8 +34,8 @@
     "text-join": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "headline-debugger": "The Debugger",
     "text-debugger": "Springe, renne und wirf Spiel basierend auf einem objektorientierten Ansatz. Hilf Michael, Münzen und Sprays zu finden, um gegen die Bugs zu kämpfen.",
-    "headline-pokedex": "DABubble",
-    "text-pokedex": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Messaging und robusten Kanalorganisation.",
+    "headline-pokedex": "Pokedex",
+    "text-pokedex": "Diese Anwendung ermöglicht es Benutzern, durch die Eingabe eines Pokémon-Namens oder einer Pokédex-Nummer Informationen über verschiedene Pokémon abzurufen.",
     "button-pokedex": "Projekt Details",
     "button-debugger": "Projekt Details",
     "button-join": "Projekt Details"
@@ -44,6 +44,16 @@
   "projects": {
     "debugger": {
       "description": "Springe, renne und werfe in einem objektorientierten Spiel. Hilf Michael, Münzen zu sammeln und Sprays zu finden, um gegen die verrückten Bugs zu kämpfen.",
+      "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
+    },
+
+    "join": {
+      "description": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+      "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
+    },
+
+    "pokedex": {
+      "description": "Diese Anwendung ermöglicht es Benutzern, durch die Eingabe eines Pokémon-Namens oder einer Pokédex-Nummer Informationen über verschiedene Pokémon abzurufen.",
       "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
     }
   },

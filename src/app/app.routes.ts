@@ -16,5 +16,5 @@ export const routes: Routes = [
     { path: 'my-skills', component: MySkillsComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'contact' , component: ContactComponent},
-    { path: 'details' , component: DetailsComponent}
+    { path: 'details/:id', component: DetailsComponent },
 ];

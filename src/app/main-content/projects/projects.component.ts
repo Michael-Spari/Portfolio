@@ -6,7 +6,7 @@ import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, RouterLink, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, RouterLink, TranslatePipe],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

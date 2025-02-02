@@ -34,8 +34,8 @@
   "text-join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
   "headline-debugger": "The Debugger",
   "text-debugger": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and Sprays to fight against the Bugs.",
-  "headline-pokedex": "DABubble",
-  "text-pokedex": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+  "headline-pokedex": "Pokedex",
+  "text-pokedex": "This application allows users to retrieve information about various Pokémon by entering a Pokémon name or Pokédex number.",
   "button-pokedex": "Project details",
   "button-debugger": "Project details",
   "button-join": "Project details"
@@ -45,8 +45,19 @@
     "debugger": {
       "description": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and sprays to fight against the crazy bugs.",
       "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+    },
+
+    "join": {
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+    },
+
+    "pokedex": {
+      "description": "This application allows users to retrieve information about various Pokémon by entering a Pokémon name or Pokédex number.",
+      "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
     }
   },
+  
 
 "thoughts": {
   "words": "IN THEIR WORDS",

@@ -1,19 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
+import { ActivatedRoute } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { TranslatePipe } from "@ngx-translate/core";
 import { HeaderComponent } from '../shared/header/header.component';
-import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, FooterComponent, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, RouterLink, HeaderComponent, TranslatePipe],
   templateUrl: './details.component.html',
   styleUrl: './details.component.scss'
 })
 export class DetailsComponent {
+
+  currentProject: any;
+
   projects = [
     {
+      id: "the-debugger",
       name: "The Debugger",
       descriptionKey: "projects.debugger.description",
       implementationDetailsKey: "projects.debugger.implementationDetails",
@@ -24,28 +29,62 @@ export class DetailsComponent {
         { icon: "assets/icon/detail/css.png", name: "CSS" }
       ],
       image: "assets/img/projects/theDebugger.png",
-      logo: "Michael Spari - Frontend Developer",
+      logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
       liveTest: "theDebugger/index.html"
     },
     {
+      id: "join",
       name: "Join",
       descriptionKey: "projects.join.description",
       implementationDetailsKey: "projects.join.implementationDetails",
-      duration: "4 weeks",
+      duration: "5 weeks",
       icons: [
-        { icon: "assets/icon/detail/ts.png", name: "TypeScript" },
+        { icon: "assets/icon/detail/css.png", name: "SCSS" },
+        { icon: "assets/icon/detail/html.png", name: "HTML" },
+        { icon: "assets/icon/detail/fb.png", name: "Firebase" },
         { icon: "assets/icon/detail/angular.png", name: "Angular" },
-        { icon: "assets/icon/detail/scss.png", name: "SCSS" }
+        { icon: "assets/icon/detail/ts.png", name: "TypeScript" }, 
       ],
       image: "assets/img/projects/join.png",
-      logo: "Michael Spari - Frontend Developer",
+      logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
       liveTest: "join/index.html"
+    },
+    {
+      id: "pokedex",
+      name: "Pokedex",
+      descriptionKey: "projects.pokedex.description",
+      implementationDetailsKey: "projects.pokedex.implementationDetails",
+      duration: "2 weeks",
+      icons: [
+        { icon: "assets/icon/detail/css.png", name: "SCSS" },
+        { icon: "assets/icon/detail/html.png", name: "HTML" },
+        { icon: "assets/icon/detail/js.png", name: "JavaScript" }, 
+      ],
+      image: "assets/img/projects/pokedex.png",
+      logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
+      logoImage: "assets/logo/logo_ms_en_over.png",
+      liveTest: "pokedex/index.html"
     }
   ];
 
-  currentIndex = 0; // Start bei erstem Projekt
+  
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      const projectId = params.get('id'); 
+      const index = this.projects.findIndex(p => p.id === projectId);
+      
+      if (index !== -1) {
+        this.currentIndex = index;
+        this.currentProject = this.projects[this.currentIndex];
+      }
+    });
+  }
+
+  currentIndex = 0;
 
   nextProject() {
     this.currentIndex = (this.currentIndex + 1) % this.projects.length;
