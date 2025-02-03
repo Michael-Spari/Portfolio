@@ -1,0 +1,56 @@
+.hbMenue {
+    background-image: url('./../assets/img/backgrounds/hbMenue.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:0;
+    right:0;
+    max-width: 375px;
+    width: 100%;
+    height: 560px;
+    transition: all 250ms ease-in-out;
+    filter: drop-shadow(-3px 3px 5px rgb(37, 37, 37));
+    z-index: 2;
+}
+
+.hbMenueHead {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    padding: 16px;
+
+}
+
+.hbMenueLogo {
+    width: 100px;
+}
+.xclose{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.hbMenueLine {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    padding-top: 30px;
+    width: 100%;
+
+}
+.hbIcons {
+    @include dFlex($jc: center, $ai: center, $g: 24px);
+    padding-top: 40px;
+}
+
+.hamburgerContainerToOpen {
+    display: flex !important;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.hamburgerContainerToClose {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+    pointer-events: none;
+}

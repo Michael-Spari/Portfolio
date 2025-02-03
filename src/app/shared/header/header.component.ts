@@ -13,6 +13,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   isSwitched = false;
   currentLanguage: any;
+  isHamburgerOpen = false; 
 
   constructor(private translate: TranslateService) {}
 
@@ -30,12 +31,12 @@ export class HeaderComponent {
     this.isSwitched = !this.isSwitched;
   }
 
-  changeColor(){
-    this.currentLanguage = this.translate.currentLang;
-    if(this.currentLanguage === 'de'){
-      return 'green';
-    } else {
-      return 'red';
-    }
+
+  toggleHamburger() {
+    this.isHamburgerOpen = !this.isHamburgerOpen;
+  }
+
+  closeHamburger() {
+    this.isHamburgerOpen = false;
   }
 }

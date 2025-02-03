@@ -1,8 +1,10 @@
 @import './styles/mixin.scss';
-@import './styles/animations.scss';
+@import './styles/footerFX.scss';
 @import './styles/headerFX.scss';
 @import './styles/skillsFX.scss';
 @import './styles/projectsFX.scss';
+@import './styles/hbMenue.scss';
+@import './styles/aboutTheFoldFX.scss';
 
 *{
     scroll-behavior: smooth;

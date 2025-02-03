@@ -9,7 +9,7 @@
             </div>
                 <div class="aboutMeOutLine">
                     <img src="assets/icon/nav/en_de_btn/B.1 1.png" alt="About Me Icon">
-                </div>
+            </div>
         </div>
         <div class="skills">
             <div class="skillsText">
@@ -35,28 +35,87 @@
                     <img src="assets/icon/nav/en_de_btn/B.1 3.png" alt="Contacts Icon">
                 </div>
         </div>
-            <div class="languageSwitch">
-                <div class="languageSwitchDe">
-                    <div>
-                        <button class="languageTextDe" [ngClass]="{ 'active': currentLanguage === 'de' }" (click)="changeLanguage('de')" [disabled]="currentLanguage === 'de'">DE</button>
-                    </div>
-                    <div class="deOutLine">
-                        <img src="assets/icon/nav/en_de_btn/de.png">
-                    </div>
+        <div class="languageSwitch">
+            <div class="languageSwitchDe">
+                <div>
+                    <button class="languageTextDe" [ngClass]="{ 'active': currentLanguage === 'de' }" (click)="changeLanguage('de')" [disabled]="currentLanguage === 'de'">DE</button>
                 </div>
-                <div class="switch">
-                    <img src="assets/icon/nav/en_de_btn/Vector1.png" alt="en_de_btn" srcset="">
-                    <img src="assets/icon/nav/en_de_btn/Vector.png" alt="en_de_btn" [ngClass]="{ 'switch-animate': isSwitched, 'switch-reverse': !isSwitched }">
+                <div class="deOutLine">
+                    <img src="assets/icon/nav/en_de_btn/de.png">
                 </div>
-                <div class="languageSwitchEn">
-                    <div>
-                        <button class="languageTextEn" [ngClass]="{ 'active': currentLanguage === 'en' }" (click)="changeLanguage('en')" [disabled]="currentLanguage === 'en'">EN</button>
+            </div>
+            <div class="switch">
+                <img src="assets/icon/nav/en_de_btn/Vector1.png" alt="en_de_btn" srcset="">
+                <img src="assets/icon/nav/en_de_btn/Vector.png" alt="en_de_btn" [ngClass]="{ 'switch-animate': isSwitched, 'switch-reverse': !isSwitched }">
+            </div>
+            <div class="languageSwitchEn">
+                <div>
+                    <button class="languageTextEn" [ngClass]="{ 'active': currentLanguage === 'en' }" (click)="changeLanguage('en')" [disabled]="currentLanguage === 'en'">EN</button>
+                </div>
+                <div class="deOutLine">
+                    <img src="assets/icon/nav/en_de_btn/en.png">
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <img class="hbMenueOn" src="assets/icon/hbMenue/hbMenue.png" (click)="toggleHamburger()">
+        </div>
+    </div>
+
+    <div class="hbMenue" [ngClass]="{'hamburgerContainerToOpen': isHamburgerOpen, 'hamburgerContainerToClose': !isHamburgerOpen }">
+        <div class="hbMenueHead">
+            <a routerLink=""><img class="hbMenueLogo" src="assets/logo/logo_ms_en_over.png"></a>
+            <img class="xclose" src="assets/icon/hbMenue/hbMenueX.png" (click)="closeHamburger()">
+        </div>
+
+            <div class="hbMenueLine">
+                    <a href="#aboutMe"><span class="nav-text">{{ 'navi.aboutme' | translate }}</span></a>
+            </div>
+
+            <div class="hbMenueLine">
+                    <a href="#mySkills"><span class="nav-text">{{ 'navi.skills' | translate }}</span></a>
+            </div>
+
+            <div class="hbMenueLine">
+                <a href="#projects"><span class="nav-text">{{ 'navi.projects' | translate }}</span></a>
+            </div>
+
+            <div class="hbMenueLine">
+                <a href="#contact"><span class="nav-text">{{ 'navi.contact' | translate }}</span></a>
+            </div>
+
+            <div class="hbMenueLine">
+                <div class="languageSwitch">
+                    <div class="languageSwitchDe">
+                        <div>
+                            <button class="languageTextDe" [ngClass]="{ 'active': currentLanguage === 'de' }" (click)="changeLanguage('de')" [disabled]="currentLanguage === 'de'">DE</button>
+                        </div>
+                        <div class="deOutLine">
+                            <img src="assets/icon/nav/en_de_btn/de.png">
+                        </div>
                     </div>
-                    <div class="deOutLine">
-                        <img src="assets/icon/nav/en_de_btn/en.png">
+                    <div class="switch">
+                        <img src="assets/icon/nav/en_de_btn/Vector1.png" alt="en_de_btn" srcset="">
+                        <img src="assets/icon/nav/en_de_btn/Vector.png" alt="en_de_btn" [ngClass]="{ 'switch-animate': isSwitched, 'switch-reverse': !isSwitched }">
+                    </div>
+                    <div class="languageSwitchEn">
+                        <div>
+                            <button class="languageTextEn" [ngClass]="{ 'active': currentLanguage === 'en' }" (click)="changeLanguage('en')" [disabled]="currentLanguage === 'en'">EN</button>
+                        </div>
+                        <div class="deOutLine">
+                            <img src="assets/icon/nav/en_de_btn/en.png">
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
+
+            <div class="hbMenueIcons">
+                <div class="hbIcons">
+                    <div class="topLeftFrame"><button class="link"><img class="linkin" src="assets/icon/hero/socialMedia/linkin.png"></button></div>
+                    <div class="middleLeftFrame"><button class="git" onclick="window.location.href='https://github.com/Michael-Spari'"><img class="linkin" src="assets/icon/hero/socialMedia/github.png"></button></div> 
+                    <div class="bottomLeftFrame"><button class="mail" onclick="window.location.href='mailto:info@michaelspari.de'"><img class="linkin" src="assets/icon/hero/socialMedia/mail.png"></button></div>
+                </div>
+            </div>
+        </div>
 </nav>
 
