@@ -5,7 +5,9 @@
             <div class="contactMe"><p>{{ 'contact.contactMe' | translate }}</p></div>
             <div class="headLine"><p>{{ 'contact.headline' | translate }}</p></div>
             <div class="contactText"><p>{{ 'contact.contactText' | translate }}</p></div>
-            <div class="arrow"><img src="assets/icon/contact/arrowRight.png"></div>
+            <div class="arrow">
+                <div class="arrowImg" ><img src="assets/icon/contact/arrowRight.png"></div>
+            </div>
         </div>
             <div class="rightFrame">
                 <div class="mailForm">
@@ -20,11 +22,16 @@
                                 </textPath>
                             </text>
                         </svg>
-                        <img src="assets/icon/contact/sticker.png" alt="Logo Sticker">
+                        <img class="stickerImg" src="assets/icon/contact/sticker.png" alt="Logo Sticker">
                         <img class="logoImage" 
                                     src="assets/logo/logo_ms_en_over.png" alt="logo" 
                                     srcset="" onmouseover="this.src='assets/logo/logo_ms_en.png'" 
                                     onmouseout="this.src='assets/logo/logo_ms_en_over.png'">
+                    </div>
+                    <div class="leftFrameResponsive">
+                        <div class="contactMe"><p>{{ 'contact.contactMe' | translate }}</p></div>
+                        <div class="headLine"><p>{{ 'contact.headline' | translate }}</p></div>
+                        <div class="contactText"><p>{{ 'contact.contactText' | translate }}</p></div>
                     </div>
                     <div class="contactRows">
                         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">

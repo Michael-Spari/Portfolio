@@ -25,7 +25,6 @@ section {
 
 .mainFrame {
     display: flex;
-    border: 0px solid #F7C518;
     flex-direction: column;
     max-width: 1440px;
     width: 100%;
@@ -33,17 +32,18 @@ section {
 
 .contactMainFrame {
     @include dFlex($jc: space-around, $ai: flex-start, $g: 0px);
-    border: 0px solid green;
     width: 100%;
 }
 
 .leftFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 0px solid red;
     flex-direction: column;
     width: 560px;
 }
 
+.leftFrameResponsive {
+    display: none;
+}
 .contactMe {
     @include dFlex($jc: flex-start, $ai: flex-start, $g: 0px);
     font-size: 20px;
@@ -60,14 +60,28 @@ section {
 }
 
 .arrow {
-    @include dFlex($jc: flex-end, $ai: center, $g: 0px);
+    @include dFlex($jc: flex-start, $ai: center, $g: 0px);
+    padding-left: 400px;
     margin-top: 50px;
     width: 100%;
+}
+.arrowImg {
+    width: 150px;
+    overflow: hidden;
+    transition: width 0.1s ease;
+    animation: expandWidth 6s infinite;
+}
+@keyframes expandWidth {
+    0%, 100% {
+        width: 0;
+    }
+    25%, 75% {
+        width: 100%;
+    }
 }
 
 .rightFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
-    border: 0px solid blue;
     width: 468px;
 }
 
@@ -189,10 +203,89 @@ a {
         transform: translate(2px, 4px);
     }
 }
- .footerDiv {
-    display: flex;
-    border: 10px solid yellow;
-    max-width: 1440px;
-    width: 100%;
-    height: 500px;
- }
+ @media(max-width: 1100px) {
+    .contactMainFrame {
+        @include dFlex($jc: space-around, $ai: center, $g: 0px);
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .leftFrame {
+        @include dFlex($jc: center, $ai: flex-start, $g: 0px);
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .leftFrameResponsive {
+        display: block;
+        margin-top: 170px;
+    }
+    .rightFrame {
+        @include dFlex($jc: center, $ai: center, $g: 0px);
+        flex-direction: column;
+        width: 100%;
+    }
+    .headLine {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .contactText {
+        font-size: 16px;
+    }
+}
+@media(max-width: 768px) {
+    .contactMainFrame {
+        @include dFlex($jc: space-around, $ai: center, $g: 0px);
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .headLine {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .contactText {
+        font-size: 14px;
+    }
+}
+@media(max-width: 420px) {
+    .contactMainFrame {
+        @include dFlex($jc: space-around, $ai: center, $g: 0px);
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .headLine {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .contactText {
+        font-size: 12px;
+    }
+    .logoImage {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        width: 60px;
+        z-index: 3;
+        transform: rotate(15deg);
+    }
+    
+    .logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+        z-index: 1;
+    }
+    .stickerImg {
+        width: 120px;
+    }
+}

@@ -9,11 +9,19 @@ section {
     margin: 0 auto;
 }
 
+.mainFrame {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
 .thoughtsHeadline {
     @include dFlex($jc: center, $ai: flex-end, $g: 0px);
     flex-direction: column;
     font-size: 62px;
-    max-width: 1200px;
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
@@ -36,7 +44,7 @@ section {
 }
 
 .thoughtsCards {
-    width: 1200px;
+    width: 100%;
     height: 405px;
     position: relative;
 }
@@ -51,7 +59,8 @@ section {
     @include dFlex($jc: space-between, $ai: flex-end, $g: 0px);
     padding-left: 30px;
     padding-right: 30px;
-    width: 512px;
+    max-width: 512px;
+    width: 100%;
     height: 50px;
     font-size: 18px;
     margin-top: 100px;
@@ -126,4 +135,22 @@ section {
     height: 100%;
     transform: rotate(4deg);
     z-index: 0;
+}
+
+@media(max-width: 1080px) {
+    .topRowProjects {
+        flex-direction: column;
+        max-width: 1440px;
+        width: 100%;
+    }
+    .bottomRowProjects {
+        @include dFlex($jc: space-around, $ai: center, $g: 60px);
+        flex-direction: column;
+        max-width: 1440px;
+        width: 100%;
+    }
+    .yellowLine {
+        font-size: 48px;
+        font-weight: 700;
+    }
 }
