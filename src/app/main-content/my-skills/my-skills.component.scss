@@ -14,6 +14,7 @@ section {
     font-size: 20px;
     margin-bottom: 10px;
     color: whitesmoke;
+    z-index: 1;
 }
 
 .skillSet {
@@ -40,30 +41,49 @@ section {
 
 .skillSetContainer {
     position: relative;
-    border: 0px solid blue;
 }
 
 .orangeBorder {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
+    width: 280px;
+    height: 100px;
+    transform-origin: top right;
+    z-index: 0;
+}
+
+.orangeBorder img {
     width: 100%;
     height: 100%;
-    border: 0px solid orange;
-    >img {
-        width: 100%;
-        height: 100%;
+}
+
+@keyframes flipDown {
+    0% {
+        transform: rotate(0deg);
     }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.flipImage {
+    animation: flipDown 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
 }
 
 .skillTextTop {
     @include dFlex($jc: center, $ai: flex-start, $g: 0px);
     background-image: url('./../../../assets/icon/skills/paper.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    margin-left: 5%;
+    margin-left: 60px;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -73,9 +93,9 @@ section {
 }
 
 .skillSetIcons {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
+    @include dFlex($jc: flex-start, $ai: center, $g: 0px);
     box-sizing: border-box;
-    margin-left: 20%;
+    margin-left: 360px;
     max-width: 700px;
     width: 100%;
     flex-wrap: wrap;
@@ -84,8 +104,8 @@ section {
 .skillItem {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     flex-direction: column;
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
 }
 
 .imageContainer {
@@ -106,7 +126,6 @@ section {
     @include dFlex($jc: flex-start, $ai: flex-end, $g: 0px);
     flex-direction: column;
     box-sizing: border-box;
-    border: 0px solid yellow;
 }
 
 .skillsContentTop {
@@ -128,5 +147,45 @@ section {
         cursor: pointer;
         transition: transform 0.3s ease;
         transform: rotate(8deg);
+    }
+}
+
+@media(max-width: 1190px) {
+    .skillsContentTop {
+        @include dFlex($jc: flex-start, $ai: flex-end, $g: 0px);
+        flex-direction: column;
+        width: 100%;
+    }
+    .skillsContentBottom {
+        @include dFlex($jc: center, $ai: center, $g: 0px);
+        flex-direction: column;
+    }
+    .skillsContentLeft {
+        margin-bottom: 40px;
+    }
+    .skillSetIcons {
+        @include dFlex($jc: center, $ai: center, $g: 0px);
+        box-sizing: border-box;
+        margin-left: 0px;
+        max-width: 700px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .skillSet {
+        font-size: 48px;
+    }
+    .orangeBorder {
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        width: 250px;
+        height: 60px;
+        transform-origin: top right;
+        z-index: 0;
+    }  
+}
+@media(max-width: 560px) {
+    .skillSet {
+        font-size: 38px;
     }
 }

@@ -97,7 +97,7 @@
 .getInTouch {
     border: 1px solid whitesmoke;
     border-radius: 100px;
-    background-color: black;
+    background-color: transparent;
     color: whitesmoke;
     font-size: 18px;
     font-weight: 500;
@@ -105,12 +105,12 @@
     padding-bottom: 8px;
     padding-left: 25px;
     padding-right: 25px;
-    box-shadow: 2px 4px whitesmoke;
+    box-shadow: 2px 3px whitesmoke;
     transition: background-color 0.1s, box-shadow 0.2s, transform 0.2s;
 
     &:hover {
         background-color: #F87A55;
         box-shadow: none;
-        transform: translate(2px, 4px);
+        transform: translate(2px, 3px);
     }
 }

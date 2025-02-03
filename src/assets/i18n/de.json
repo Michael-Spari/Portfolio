@@ -1,13 +1,13 @@
 {
   "navi": {
       "aboutme": "Über mich",
-      "skills": "Fähigkeiten",
+      "skills": "Expertise",
       "projects": "Projekte",
       "contact": "Kontakt" 
   },
 
   "about-the-fold": {
-      "button": "Nehmen Sie Kontakt auf"
+      "button": "Kontakt"
   },
    
   "about-me": {
@@ -22,7 +22,7 @@
 
   "skills": {
     "stack": "MEIN STAPEL",
-    "title": "Fähigkeiten",
+    "title": "Expertise",
     "text": "Ich habe Erfahrung im Aufbau von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um meine Fähigkeiten zu erweitern."
   },
 

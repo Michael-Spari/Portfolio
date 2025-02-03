@@ -29,8 +29,6 @@ section {
 .masterContainerFrame {
     width: calc(100% - 32px);
     max-width: 1440px;
-    height: 600px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -41,21 +39,12 @@ section {
     flex-direction: column;
     color: whitesmoke;
     height: 490px;
-    opacity: 0px;
 }
 
-.placeholderLeft {
+.placeholder {
     width: 20%;
     height: 100%;
     background-color: none;
-    opacity: 0.5;
-}
-
-.placeholderRight {
-    width: 20%;
-    height: 100%;
-    background-color: none;
-    opacity: 0.5;
 }
 
 .wavingHandDiv {
@@ -74,27 +63,13 @@ section {
 .leftFrame {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     flex-direction: column;
-    border: 0px solid yellow;
     margin-left: 5%;
-}
-
-.topLeftFrame {
-    border: 0px solid yellow;
-}
-
-.middleLeftFrame {
-    border: 0px solid green;
-}
-
-.bottomLeftFrame {
-    border: 0px solid red;
 }
 
 .rowTop {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
     width: 100%;
     height: 50%;
-    padding: 0 0px;
 }
 
 .rowBottom {
@@ -142,14 +117,144 @@ section {
     height: 50%;
 }
 
-.rowTopLeftBottomText{
+.imageMeFrame {
+    display: none;
+}
+
+.imageMe {
+    max-width: 225px;
+    width: 100%;
+}
+
+.animationText{
     font-size: 128px;
     font-weight: 700;
     font-family: "Bricolage Grotesque";
 }
 
-.rowBottomTopText {
-    font-size: 128px;
-    font-weight: 700;
-    font-family: "Bricolage Grotesque";
+@media(max-width: 1320px) {
+    .animationText{
+        font-size: 110px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+}
+
+@media(max-width: 1170px) {
+    .animationText{
+        font-size: 90px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 190px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 990px) {
+    .animationText{
+        font-size: 80px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 190px;
+        width: 100%;
+    }
+    .getInTouch {
+        font-size: 14px;
+    }
+    .btnAnimation {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 900px) {
+    .animationText{
+        font-size: 68px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 150px;
+        width: 100%;
+    }
+    .mainFrame {
+        height: 500px;
+    }
+}
+
+@media(max-width: 768px) {
+    .animationText{
+        font-size: 70px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 220px;
+        width: 100%;
+    }
+    .rowTopRight {
+        display: none;
+    }
+    .imageMeFrame {
+        @include dFlex($jc: center, $ai: center, $g: 0px);
+    }
+    .leftFrame {
+        display: none;
+    }
+    .rowBottomBottom {
+        margin-top: 20px;
+    }
+    .placeholder {
+        width: 10%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 520px) {
+    .animationText{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 190px;
+        width: 100%;
+    }
+    .placeholder {
+        width: 0px;
+        height: 0px;
+    }
+}
+@media(max-width: 382px) {
+    .animationText{
+        font-size: 48px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 190px;
+        width: 100%;
+    }
+    .placeholder {
+        width: 0px;
+        height: 0px;
+    }
+}
+@media(max-width: 316px) {
+    .animationText{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "Bricolage Grotesque";
+    }
+    .imageMe {
+        max-width: 190px;
+        width: 100%;
+    }
+    .placeholder {
+        width: 0px;
+        height: 0px;
+    }
 }

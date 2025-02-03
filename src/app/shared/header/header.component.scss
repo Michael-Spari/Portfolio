@@ -1,10 +1,16 @@
 @import './../../../styles.scss';
-
 nav {
     font-family: "Bricolage Grotesque";
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+}
+
+.toggle {
+    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
 }
 
 .navContainer {
@@ -55,6 +61,24 @@ a {
 
 .logo {
     height: 120px;   
+}
+
+@media(max-width: 920px) {
+    .toggle {
+        display: none;
+    }
+    .logo {
+        height: 100px;   
+    }
+}
+
+@media(max-width: 768px) {
+    .toggle {
+        display: none;
+    }
+    .logo {
+        height: 80px;   
+    }
 }
 
 

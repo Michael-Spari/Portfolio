@@ -41,7 +41,7 @@ section {
     box-sizing: border-box;
     flex-direction: column;
     color: #FFFFFF;
-    width: 44%;
+    width: 560px;
     height: 400px;
 }
 
@@ -88,15 +88,20 @@ section {
 }
 
 .lineBlue {
-    // width: 303px;
-    // height: 20px;
     overflow: hidden;
-    transition: width 0.02s ease;
+    transition: width 0.1s ease;
     animation: expandWidth 6s infinite;
+}
+@keyframes expandWidth {
+    0%, 100% {
+        width: 0;
+    }
+    25%, 75% {
+        width: 100%;
+    }
 }
 
 .letsTalk {
-    border: 1px solid black;
     border-radius: 100px;
     color: black;
     font-size: 18px;
@@ -135,4 +140,89 @@ section {
 .rightContentBottom {
     @include dFlex($jc: flex-end, $ai: center, $g: 0px);
     width: 100%;
+}
+
+@media(max-width: 1080px) {
+    .mainContent {
+        flex-direction: column-reverse;
+    }
+    section {
+        height: 1000px;
+    }
+    .rightContent {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .aboutMe {
+        font-size: 48px;
+    }
+}
+@media(max-width: 720px) {
+    .rightContent {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .leftContent {
+        width: 460px;
+        height: 400px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+    }
+    .based, .locate, .remote {
+        font-size: 14px;
+    }
+    .iconLeft {
+        width: 30px;
+    }
+}
+@media(max-width: 580px) {
+    .rightContent {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .leftContent {
+        width: 360px;
+        height: 400px;
+        padding-left: 80px;
+        padding-right: 80px;
+        
+    }
+    .aboutMe {
+        font-size: 34px;
+    }
+    .based {
+        font-size: 14px;
+        top: 0px;
+    }
+    .locate {
+        font-size: 14px;
+        top: 90px;
+    }
+    .remote {
+        font-size: 14px;
+        top: 134px;
+    }
+    .iconLeft {
+        width: 30px;
+    }
+}
+@media(max-width: 410px) {
+    .rightContent {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .leftContent {
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 300px;
+        height: 400px;
+        padding-left: 10px;
+        padding-right: 10px;       
+    }
+
 }
