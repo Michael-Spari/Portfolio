@@ -1,7 +1,5 @@
 @import './../../styles.scss';
 section {
-    height: 100vh;
-    max-width: 1440px;
     width: 100%;
     background-image: url('./../../assets/img/backgrounds/detail.png');
     font-family: 'Bricolage Grotesque';
@@ -11,6 +9,7 @@ section {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    height: auto;
 }
 
 .goBack {
@@ -27,6 +26,22 @@ section {
             color: #F87A55;
         }
     }
+}
+.masterFrame {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    // padding-right: 120px;
+    // padding-left: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Bricolage Grotesque";
+}
+
+.nav-text {
+    mix-blend-mode: difference;
 }
 
 .goNext {
@@ -64,7 +79,17 @@ section {
 }
 
 .blueLine {
-    margin-bottom: 0px
+    overflow: hidden;
+    transition: width 0.1s ease;
+    animation: expandWidth 6s infinite;
+}
+@keyframes expandWidth {
+    0%, 100% {
+        width: 0;
+    }
+    25%, 75% {
+        width: 100%;
+    }
 }
 
 .description {

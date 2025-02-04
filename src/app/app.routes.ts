@@ -7,6 +7,7 @@ import { MySkillsComponent } from './main-content/my-skills/my-skills.component'
 import { ProjectsComponent } from './main-content/projects/projects.component';
 import { ContactComponent } from './main-content/contact/contact.component';
 import { DetailsComponent } from './details/details.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 export const routes: Routes = [
     { path: '', component: MainContentComponent },
@@ -17,4 +18,5 @@ export const routes: Routes = [
     { path: 'projects', component: ProjectsComponent },
     { path: 'contact' , component: ContactComponent},
     { path: 'details/:id', component: DetailsComponent },
+    { path: 'imprint', component: ImprintComponent }
 ];

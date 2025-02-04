@@ -93,6 +93,9 @@
   "detailheadline": "Implementation Details",
   "duration": "Duration:",
   "next": "Next Project"
-  }
+  },
 
+  "imprint": {
+    "imprint": "Legal Notice"
+  }
 }

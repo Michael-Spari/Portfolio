@@ -9,7 +9,6 @@ nav {
 .toggle {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
     padding-left: 5%;
-    padding-right: 5%;
     width: 100%;
 }
 
@@ -18,8 +17,8 @@ nav {
     max-width: 1440px;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 120px;
+    padding-right: 120px;
     height: auto;
     margin: 0 auto;
 }
@@ -70,6 +69,10 @@ a {
     .logo {
         height: 100px;   
     }
+    .navContainer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -78,6 +81,22 @@ a {
     }
     .logo {
         height: 80px;   
+    }
+    .navContainer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media(max-width: 520px) {
+    .navContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media(max-width: 382px) {
+    .navContainer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

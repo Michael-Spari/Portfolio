@@ -1,0 +1,70 @@
+@import './../../styles.scss';
+section {
+    width: 100%;
+    background-image: url('./../../assets/img/backgrounds/detail.png');
+    font-family: 'Bricolage Grotesque';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.imprint {
+    @include dFlex($jc: center, $ai: flex-start, $g: 0px);
+    flex-direction: column;
+    max-width: 840px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Bricolage Grotesque";
+    color: #FFFFFF;
+}
+.nav-text {
+    font-size: 18px;
+    mix-blend-mode: difference;
+    color: white;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+@media(max-width: 920px) {
+    .imprint {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .nav-text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .imprint {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .nav-text {
+        font-size: 14px;
+    }
+}
+@media(max-width: 520px) {
+    .imprint {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media(max-width: 382px) {
+    .imprint {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-text {
+        font-size: 12px;
+    }
+}

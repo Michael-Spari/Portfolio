@@ -1,14 +1,17 @@
 @import './../../../styles.scss';
 section {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    font-family: 'Bricolage Grotesque';
-    background-color: transparent;
-    flex-direction: column;
+    font-family: "Bricolage Grotesque";
     max-width: 1440px;
-    padding-bottom: 60px;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    margin: 0 auto;
+}
 
+.mainFrame {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .gitHub {
@@ -29,8 +32,6 @@ section {
 .logoRow {
     width: 100%;
     padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 .logoImage {
@@ -41,8 +42,12 @@ section {
 .linkRow {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+}
+
+.nav-text {
+    font-size: 18px;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 a {
@@ -87,5 +92,31 @@ a {
         .legalNoticeOutLine {
             width: 105px;
         }
+    }
+}
+@media(max-width: 900px) {
+    .mainFrame {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width: 768px) {
+    .mainFrame {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media(max-width: 520px) {
+    .mainFrame {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media(max-width: 382px) {
+    .mainFrame {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

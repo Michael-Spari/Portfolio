@@ -1,6 +1,6 @@
 <section>
     <div><app-header></app-header></div>
-
+<div class="masterFrame">
     <div class="goBack">
         <div class="arrowBack"><img src="assets/icon/detail/back.png"></div>
         <div class="back">
@@ -55,10 +55,10 @@
                     </div>
                     <div class="buttonFrame">
                         <button class="gitandLiveBtn">
-                            <a [href]="projects[currentIndex].gitHub">GitHub</a>
+                            <a class="nav-text" [href]="projects[currentIndex].gitHub">GitHub</a>
                         </button>
                         <button class="gitandLiveBtn">
-                            <a [href]="projects[currentIndex].liveTest">Live Test</a>
+                            <a class="nav-text" [href]="projects[currentIndex].liveTest">Live Test</a>
                         </button>
                     </div>
                 </div>
@@ -67,10 +67,11 @@
     </div>
     <div class="goNext">
         <div class="next">
-            <button (click)="nextProject()">{{ 'detail.next' | translate }}</button>
+            <button class="nav-text" (click)="nextProject()">{{ 'detail.next' | translate }}</button>
         </div>
         <div class="arrowNext"><img src="assets/icon/detail/next.png"></div>
     </div>
+</div>
 </section>
 
 
