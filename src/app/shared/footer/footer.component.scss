@@ -40,7 +40,8 @@ section {
 }
 
 .linkRow {
-    @include dFlex($jc: space-between, $ai: center, $g: 0px);
+    @include dFlex($jc: space-between, $ai: flex-start, $g: 0px);
+    padding-bottom: 30px;
     width: 100%;
 }
 

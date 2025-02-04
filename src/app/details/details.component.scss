@@ -31,9 +31,7 @@ section {
     max-width: 1440px;
     width: 100%;
     box-sizing: border-box;
-    // padding-right: 120px;
-    // padding-left: 120px;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 100px;
     height: auto;
     margin: 0 auto;
@@ -65,6 +63,7 @@ section {
     @include dFlex($jc: space-between, $ai: flex-start, $g: 48px);
     padding-left: 120px;
     padding-right: 120px;
+    border: 1px solid green;
 }
 
 .detailFrameLeft {
@@ -209,4 +208,49 @@ section {
         box-shadow: none;
         transform: translate(2px, 4px);
     }
+}
+@media(max-width: 920px) {
+    .detailFrame {
+        flex-direction: column;
+    }
+    .headline {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .description {
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .impDetails {
+        font-size: 18px;
+    }
+    .desText {
+        font-size: 14px;
+    }
+    .detailFrame {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+@media(max-width: 590px) {
+    .headline {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .detailFrame {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-text {
+        font-size: 14px;
+    }
+    .gitandLiveBtn {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
 }
