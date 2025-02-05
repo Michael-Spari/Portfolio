@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import {TranslatePipe, TranslateDirective} from "@ngx-translate/core";
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FooterComponent, FormsModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, FooterComponent, FormsModule, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -16,13 +16,19 @@ export class ContactComponent {
 
   http = inject(HttpClient);
 
-  contactData = {
-    name: "",
-    email: "",
-    message: "",
-  }
+  contactData: {
+    name: string;
+    email: string;
+    message: string;
+  } = {
+      name: "",
+      email: "",
+      message: "",
+    }
 
   mailTest = false;
+
+  isAcceptedPrivacyPolicy: boolean = false;
 
   post = {
     endPoint: 'https://michaelspari.de/sendMail.php',
@@ -36,18 +42,21 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) {
+    if (ngForm.submitted && ngForm.form.valid && this.isAcceptedPrivacyPolicy) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
 
             ngForm.resetForm();
+            this.isAcceptedPrivacyPolicy = false;
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
+    } else if (!this.isAcceptedPrivacyPolicy) {
+      console.error('Privacy policy must be accepted.');
     }
   }
 }

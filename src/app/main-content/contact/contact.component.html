@@ -35,30 +35,58 @@
                     </div>
                     <div class="contactRows">
                         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                        <div class="contactFields">
+                        <fieldset class="contactFields">
                             <div class="headline"><label for="name">{{ 'contact.name' | translate }}</label></div>
-                            <input [(ngModel)]="contactData.name" id="name" name="name" class="inputField" type="text" placeholder="Your name goes here" required>
-                        </div>
-                        <div class="contactFields">
+                            <div class="errorMessageContainer">
+                                @if (!name.valid && name.touched) {
+                                <p class="errorMessage">{{ 'contact.nameerror' | translate}}</p>
+                                }
+                            </div>
+                            <input #name="ngModel" [(ngModel)]="contactData.name" class="contactMeForm__input" type="text"
+                                id="name" name="name" placeholder="{{ 'contact.nameplaceholder' | translate}}"
+                                required>
+                        </fieldset>
+
+                        <fieldset class="contactFields">
                             <div class="headline"><label for="email">{{ 'contact.email' | translate }}</label></div>
-                            <input [(ngModel)]="contactData.email" id="email" name="email" class="inputField" type="text" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                            <!-- @if (!email.valid && email.touched && email.disabled) {
-                                <span>Please enter a email</span>
-                            } -->
-                        </div>
-                        <div class="contactFields">
+                            <div class="errorMessageContainer">
+                                @if (!email.valid && email.touched) {
+                                <p class="errorMessage">{{ 'contact.emailerror' | translate}}</p>
+                                }
+                            </div>
+                            <input #email="ngModel" [(ngModel)]="contactData.email" class="contactMeForm__input" type="text"
+                                id="email" name="email" placeholder="{{ 'contact.emailplaceholder' | translate}}"
+                                required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        </fieldset>
+
+                        <fieldset class="contactFields">
                             <div class="headline"><label for="message">{{ 'contact.message' | translate }}</label></div>
-                            <input #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" class="inputField" type="text" placeholder="Hello Lukas, I am interested in..." required>
-                            @if (!message.valid && message.touched && message.disabled) {
-                                <span>Please enter a message</span>
-                            }
-                        </div>
+                            <div class="errorMessageContainer">
+                                @if (!message.valid && message.touched) {
+                                <p class="errorMessage">{{ 'contact.messageerror' | translate}}</p>
+                                }
+                            </div>
+                            <input #message="ngModel" [(ngModel)]="contactData.message" class="contactMeForm__input" type="text"
+                                id="message" name="message" placeholder="{{ 'contact.messageplaceholder' | translate}}"
+                                required>
+                        </fieldset>
+
                         <div class="agreeField">
-                            <input type="checkbox" id="agree" class="checkField" name="agree">
-                            <label for="agree">{{ 'contact.privacyPolicy' | translate }}<a href="">{{ 'contact.privacyPolicyLink' | translate }}</a></label>  
+                            <input type="checkbox" id="agree" class="checkField" name="agree"
+                                   [(ngModel)]="isAcceptedPrivacyPolicy">
+                            <label class="accept" for="agree">{{ 'contact.privacyPolicy' | translate }}
+                                <a href="">{{ 'contact.privacyPolicyLink' | translate }}</a>
+                            </label>  
                         </div>
-                        <div class="pleaseAccept"><p>{{ 'contact.accept' | translate }}</p></div>
-                        <div class="sendButton"><input type="submit" value="{{ 'contact.send' | translate }}" class="sendBtn"></div>
+                        <div class="pleaseAccept" *ngIf="!isAcceptedPrivacyPolicy">
+                            <p>{{ 'contact.accept' | translate }}</p>
+                        </div>
+                        <div class="sendButton">
+                            <input type="submit" value="{{ 'contact.send' | translate }}" 
+                                   class="sendBtn" 
+                                   [disabled]="!isAcceptedPrivacyPolicy"
+                                   [ngClass]="{ 'disabledBtn': !isAcceptedPrivacyPolicy }">
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -67,4 +95,3 @@
     <app-footer></app-footer>
 </div>
 </section>
-

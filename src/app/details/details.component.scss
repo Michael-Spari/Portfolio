@@ -239,8 +239,13 @@ section {
         font-weight: 700;
     }
     .detailFrame {
-        padding-left: 40px;
+        padding-left: 70px;
         padding-right: 40px;
+    }
+    .iconsDuration {
+        @include dFlex($jc: flex-start, $ai: flex-start, $g: 15px);
+        flex-direction: column;
+        width: 100%;
     }
     .logo {
         display: none;

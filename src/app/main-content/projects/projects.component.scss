@@ -10,6 +10,9 @@ section {
     padding-left: 120px;
     padding-right: 120px;
 }
+button {
+    z-index: 10;
+}
 
 .topRowProjects {
     @include dFlex($jc: space-around, $ai: center, $g: 60px);

@@ -170,6 +170,9 @@ section {
         padding-left: 40px;
         padding-right: 40px;
     }
+    .bottomRow {
+        font-size: 28px;
+    }
 }
 @media(max-width: 382px) {
     .mainFrame {
@@ -180,3 +183,159 @@ section {
         font-size: 12px;
     }
 }
+
+
+// @import './../../../styles.scss';
+
+// #feedbackSection {
+//     @include setFlex();
+//     margin-top: 150px;
+// }
+
+// #feedbackSectionContent {
+//     @include setFlex($fd: column);
+//     width: 100%;
+// }
+
+// .feedbackHeadlineContainer {
+//     align-self: flex-end;
+//     @include setFlex($fd: column, $ai: flex-end);
+// }
+
+// .introductionContainer {
+//     @include setFlex($gap: 8px);
+// }
+
+// .fadeInRightLeftContainer {
+//     width: 150px;
+//     overflow: hidden;
+// }
+
+// #fadeInImageFeedback {
+//     width: 150px;
+// }
+
+// .feedbacksContainer {
+//     position: relative;
+//     @include setFlex();
+//     margin-top: 64px;
+//     height: 350px;
+//     width: 100%;
+// }
+
+// .feedbackContainer {
+//     width: 486px;
+//     height: 320px;
+//     padding: 24px;
+//     @include setFlex($fd: column, $ai: space-between, $jc: flex-end, $gap: 8px);
+//     position: absolute;
+//     border-radius: 20px;
+
+//     &:hover::after {
+//         content: "";
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: -1;
+//         background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/Hover.png');
+//         background-size: cover;
+//         opacity: 1;
+//     }
+// }
+
+// .feedbackText {
+//     flex: 1;
+// }
+
+// .feedbackFrom {
+//     @include setFlex($jc: space-between, $ai: flex-end);
+// }
+
+// .feefbackFrom__Profile {
+//     @include setFlex($gap: 8px);
+// }
+
+// #feedback1 {
+//     top: 0;
+//     left: 50px;
+//     z-index: 3;
+//     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/A.png');
+//     background-size: cover;
+//     transform: rotate(-4deg);
+//     transition: $stdTransition;
+
+
+//     &:hover {
+//         z-index: 4;
+//         transform: rotate(-3deg) translateY(-8px);
+//     }
+// }
+
+// #feedback2 {
+//     top: 24px;
+//     z-index: 2;
+//     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/B.png');
+//     background-size: cover;
+//     transition: $stdTransition;
+
+//     &:hover {
+//         z-index: 4;
+//         transform: rotate(-1deg) translateY(-8px);
+//     }
+// }
+
+// #feedback3 {
+//     top: 0;
+//     right: 50px;
+//     z-index: 1;
+//     background-image: url('./../../../assets/images/03_Stickers/02_Testimonials/Color option 1/A.png');
+//     background-size: cover;
+//     transform: rotate(4deg);
+//     transition: $stdTransition;
+
+//     &:hover {
+//         z-index: 4;
+//         transform: rotate(3deg) translateY(-8px);
+//     }
+// }
+
+// .feefbackFrom__Name> :nth-child(1) {
+//     font-size: 20px;
+//     font-weight: 700;
+// }
+
+// .feefbackFrom__Name> :nth-child(2) {
+//     font-size: 16px;
+//     font-weight: 500;
+// }
+
+// .feedbackLink {
+//     &:hover {
+//         * {
+//             color: $clrBaseBright;
+//         }
+
+//         .feedbackIcon {
+//             fill: $clrBaseBright;
+//         }
+//     }
+
+//     &:any-link {
+//         color: inherit;
+//     }
+
+//     &:hover {
+//         color: inherit;
+//     }
+
+//     &:active {
+//         color: inherit;
+//     }
+
+//     &:visited {
+//         color: inherit;
+//     }
+
+// }

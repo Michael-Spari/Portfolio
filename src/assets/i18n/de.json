@@ -21,7 +21,7 @@
   },
 
   "skills": {
-    "stack": "MEIN STAPEL",
+    "stack": "DEV-SKILLS",
     "title": "Expertise",
     "text": "Ich habe Erfahrung im Aufbau von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um meine Fähigkeiten zu erweitern."
   },
@@ -83,7 +83,13 @@
   "privacyPolicy": "Ich habe die gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
   "privacyPolicyLink": "Datenschutzerklärung",
   "accept": "Bitte akzeptieren Sie die Datenschutzerklärung",
-  "send": "Senden"
+  "send": "Senden",
+  "nameerror": "Hoppla! Ihr Name fehlt",
+  "nameplaceholder": "Bitte Name eingeben",
+  "emailerror": "Hoppla! Ihre Email wird benötigt",
+  "emailplaceholder": "Bitte deine Email eingeben",
+  "messageerror": "Hoppla! Ihre Nachricht wird benötigt",
+  "messageplaceholder": "Bitte Nachricht eingeben"
   },
 
   "detail": {
@@ -95,6 +101,9 @@
   },
 
   "imprint": {
-    "imprint": "Impressum"
+    "imprint": "Impressum",
+    "contact": "Kontakt",
+    "disclaimer": "Haftungsausschluss",
+    "privacypolice": "Datenschutzerklärung"
   }
 }

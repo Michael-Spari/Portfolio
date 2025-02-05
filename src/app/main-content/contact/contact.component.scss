@@ -131,23 +131,38 @@ section {
 .contactRows {
     @include dFlex($jc: center, $ai: flex-start, $g: 0px);
     flex-direction: column;
+    box-sizing: content-box;
     margin-top: 130px;
 }
 
 .contactFields {
-    @include dFlex($jc: flex-end, $ai: flex-start, $g: 15px);
+    @include dFlex($jc: center, $ai: flex-start, $g: 15px);
     border-bottom: 1px solid #F7C518 ;
     border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     flex-direction: column;
     padding-bottom: 15px;
     padding-left: 20px;
-    height: 90px;
-    width: 100%;
     
     &:hover {
         border-top: 1px solid #3355FF;
         border-bottom: 1px solid #3355FF;
     }
+}
+
+.disabledBtn {
+    background-color: transparent !important; /* Deaktivierter Hintergrund */
+    color: lightgray !important; /* Deaktivierte Schrift */
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+}
+
+.disabledBtn:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
 }
 
 .headline {
@@ -211,6 +226,9 @@ a {
         padding-left: 120px;
         padding-right: 120px;
     }
+    .contactRows {
+        margin-top: 30px;
+    }
     .leftFrame {
         @include dFlex($jc: center, $ai: flex-start, $g: 0px);
         flex-direction: column;
@@ -242,11 +260,28 @@ a {
         padding-left: 80px;
         padding-right: 80px;
     }
+    .sendButton {
+        margin-top: 30px;
+        margin-top: 20px;
+    }
+    .sendBtn {
+        width: 110px;
+        font-size: 14px;
+    }
     .headLine {
         font-size: 36px;
         margin-bottom: 20px;
     }
     .contactText {
+        font-size: 14px;
+    }
+    .pleaseAccept {
+        padding-top: 30px;
+    }
+    label {
+        font-size: 18px;
+    }
+    .accept {
         font-size: 14px;
     }
 }
@@ -273,7 +308,6 @@ a {
         z-index: 3;
         transform: rotate(15deg);
     }
-    
     .logo {
         position: absolute;
         right: 0;
@@ -287,5 +321,8 @@ a {
     }
     .stickerImg {
         width: 120px;
+    }
+    .pleaseAccept {
+        padding-top: 50px;
     }
 }

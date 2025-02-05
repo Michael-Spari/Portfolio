@@ -83,14 +83,14 @@ a {
         height: 80px;   
     }
     .navContainer {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 @media(max-width: 520px) {
     .navContainer {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media(max-width: 382px) {

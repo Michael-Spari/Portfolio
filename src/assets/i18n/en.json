@@ -84,7 +84,13 @@
   "privacyPolicy": "I've read the and agree to the processing of my data as outlined.",
   "privacyPolicyLink": "privacy policy",
   "accept": "Please accept the privacy policy",
-  "send": "Send"
+  "send": "Send",
+  "nameerror": "Oops! it seems your name is missing ",
+  "nameplaceholder": "Your name goes here",
+  "emailerror": "Hoppla! your email is required",
+  "emailplaceholder": "Your name goes here",
+  "messageerror": "What do you need to develop?",
+  "messageplaceholder": "Your message goes here"
   },
 
 "detail": {
@@ -96,6 +102,9 @@
   },
 
   "imprint": {
-    "imprint": "Legal Notice"
+    "imprint": "Legal Notice",
+    "contact": "Contact",
+    "disclaimer": "Disclaimer",
+    "privacypolice": "Privacy Policy"
   }
 }

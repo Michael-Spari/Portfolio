@@ -3,8 +3,6 @@ section {
     @include dFlex($jc: center, $ai: center, $g: 0px);
     box-sizing: content-box;
     width: 100%;
-    height: auto;
-    height: 720px;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
@@ -12,18 +10,17 @@ section {
 .mainContent {
     @include dFlex($jc: space-between, $ai: center, $g: 0px);
     font-family: 'Bricolage Grotesque';
+    padding-left: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
     max-width: 1440px;
-    padding-top: 144px;
-    padding-bottom: 144px;
-    padding-left: 120px;
-    padding-right: 120px;
     width: 100%;
+    position: relative;
+    height: 600px;
 }
 
 .whois {
-    @include dFlex($jc: flex-start, $ai: flex-start, $g: 0px);
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
 
 .aboutMe {
@@ -36,61 +33,56 @@ section {
 }
 
 .leftContent {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
+    @include dFlex($jc: flex-start, $ai: center, $g: 0px);
     position: relative;
     box-sizing: border-box;
-    flex-direction: column;
     color: #FFFFFF;
-    width: 560px;
-    height: 400px;
+    width: 50%;
+    height: 100%;
+}
+
+.textIcon {
+    @include dFlex($jc: center, $ai: center, $g: 0px);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.imageStripe {
+    max-width: 560px;
+    width: 100%;
 }
 
 .based {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    background-image: url('/assets/img/aboutme/yellow.png');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
     position: absolute;
-    top: 10px;
     font-size: 18px;
-    width: 100%;
-    height: 191px;
+    top: 25%;
     z-index: 3;
+    transform: rotate(-4deg);
 }
 
 .locate {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    background-image: url('/assets/img/aboutme/blue.png');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
     position: absolute;
-    top: 132px;
     font-size: 18px;
-    width: 100%;
-    height: 152px;
+    top: 40%;
     z-index: 2;
 }
 
 .remote {
-    @include dFlex($jc: center, $ai: center, $g: 0px);
-    background-image: url('/assets/img/aboutme/orange.png');
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
     position: absolute;
-    top: 224px;
+    top: 55%;
     font-size: 18px;
-    width: 100%;
-    height: 191px;
     z-index: 1;
+    transform: rotate(4deg);
 }
 
 .lineBlue {
     overflow: hidden;
     transition: width 0.1s ease;
     animation: expandWidth 6s infinite;
+    img {
+        width: 250px;
+    }
 }
 @keyframes expandWidth {
     0%, 100% {
@@ -112,7 +104,6 @@ section {
     padding-right: 25px;
     box-shadow: 2px 4px black;
     transition: background-color 0.1s, box-shadow 0.2s, transform 0.2s;
-
     &:hover {
         background-color: #F87A55;
         box-shadow: none;
@@ -141,17 +132,29 @@ section {
 @media(max-width: 1080px) {
     .mainContent {
         flex-direction: column-reverse;
+        height: 840px;
         padding-left: 100px;
         padding-right: 100px;
-    }
-    section {
-        height: 1000px;
     }
     .rightContent {
         width: 100%;
     }
+    .leftContent {
+        @include dFlex($jc: center, $ai: space-between, $g: 0px);
+        max-width: 560px;
+        width: 100%;
+    }
     .aboutMe {
         font-size: 48px;
+    }
+    .based {
+        top: 20px;
+    }
+    .locate {
+        top: 125px;
+    }
+    .remote {
+        top: 234px;
     }
 }
 @media(max-width: 720px) {
@@ -159,16 +162,35 @@ section {
         padding-left: 80px;
         padding-right: 80px;
     }
+    .lineBlue {
+        img {
+            width: 180px;
+        }
+    }
     .rightContent {
         width: 100%;
-
     }
     .leftContent {
         width: 460px;
-        height: 400px;
-        
+        height: 400px;  
     }
-    .based, .locate, .remote {
+    .whois {
+        font-size: 14px;
+    }
+    .aboutMe {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .based {
+        top: 10px;
+    }
+    .locate {
+        top: 110px;
+    }
+    .remote {
+        top: 200px;
+    }
+    .letsTalk {
         font-size: 14px;
     }
     .iconLeft {
@@ -177,6 +199,7 @@ section {
 }
 @media(max-width: 580px) {
     .mainContent {
+        height: 720px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -184,9 +207,9 @@ section {
         width: 100%;
     }
     .leftContent {
+        margin-top: 30px;
         width: 360px;
-        height: 400px;
-        
+        height: 400px; 
     }
     .aboutMe {
         font-size: 34px;
@@ -197,29 +220,38 @@ section {
     }
     .locate {
         font-size: 14px;
-        top: 90px;
+        top: 80px;
     }
     .remote {
         font-size: 14px;
-        top: 134px;
+        top: 144px;
     }
     .iconLeft {
         width: 30px;
     }
 }
-@media(max-width: 410px) {
+@media(max-width: 420px) {
     .rightContent {
         width: 100%;
-        padding-left: 60px;
-        padding-right: 60px;
     }
     .leftContent {
-        padding-left: 60px;
-        padding-right: 60px;
-        width: 300px;
-        height: 400px;
+        width: 250px;
         padding-left: 10px;
         padding-right: 10px;       
     }
-
+    .iconLeft {
+        width: 20px;
+    }
+    .based {
+        font-size: 12px;
+        top: 0px;
+    }
+    .locate {
+        font-size: 12px;
+        top: 60px;
+    }
+    .remote {
+        font-size: 12px;
+        top: 104px;
+    }
 }
