@@ -18,13 +18,17 @@ export class HeaderComponent {
   constructor(private translate: TranslateService) {}
 
   ngOnInit() {
-    this.currentLanguage = this.translate.currentLang || 'de';
+    this.currentLanguage = localStorage.getItem('language') || 'de';
+    this.translate.use(this.currentLanguage);
+    this.isSwitched = JSON.parse(localStorage.getItem('isSwitched') || 'false');
   }
 
   changeLanguage(language: string) {
     this.translate.use(language);
     this.currentLanguage = language;
+    localStorage.setItem('language', language);
     this.toggleSwitch();
+    localStorage.setItem('isSwitched', JSON.stringify(this.isSwitched));
   }
 
   toggleSwitch() {

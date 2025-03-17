@@ -13,8 +13,6 @@ import {
   imports: [
     CommonModule,
     RouterOutlet,
-    TranslatePipe, 
-    TranslateDirective,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -24,7 +22,8 @@ export class AppComponent {
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('de');
+    const savedLanguage = localStorage.getItem('language') || 'de';
+    this.translate.setDefaultLang(savedLanguage);
+    this.translate.use(savedLanguage);
   }
 }

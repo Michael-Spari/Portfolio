@@ -150,6 +150,7 @@ section {
         max-width: 190px;
         width: 100%;
     }
+    
 }
 
 @media(max-width: 990px) {
@@ -226,6 +227,9 @@ section {
     .placeholder {
         width: 0px;
         height: 0px;
+    }
+    section {
+        height: 100vh;
     }
 }
 @media(max-width: 382px) {
