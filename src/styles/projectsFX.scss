@@ -57,6 +57,13 @@
         opacity: 1;
       }
     }
+    @media(max-width: 1080px) {
+      .hover-button {
+        cursor: pointer;
+        background-color: #F87A55;
+        opacity: 1;
+      }
+    }
 }
 
 .floating-laptop {
