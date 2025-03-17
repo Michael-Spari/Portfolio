@@ -81,7 +81,7 @@
                             <input type="checkbox" id="agree" class="checkField" name="agree"
                                    [(ngModel)]="isAcceptedPrivacyPolicy">
                             <label class="accept" for="agree">{{ 'contact.privacyPolicy' | translate }}
-                                <a href="">{{ 'contact.privacyPolicyLink' | translate }}</a>
+                                <a routerLink="imprint">{{ 'contact.privacyPolicyLink' | translate }}</a>
                             </label>  
                         </div>
                         <div class="pleaseAccept" *ngIf="!isAcceptedPrivacyPolicy">
