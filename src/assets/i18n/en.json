@@ -13,7 +13,7 @@
 "skills": {
   "stack": "MY STACK",
   "title": "Skill set",
-  "text": "I have gained experience in building projects with a variety of frontend technologies and concepts. With a strong growth mindset, I’m always exploring new areas to enhance my skill set."
+  "text": "I have extensive experience in developing projects using modern frontend technologies and proven software architectures. My focus is on designing high-performance and user-friendly applications with a clear eye for design and functionality. At the same time, I am deeply engaged with future developments, particularly in the field of AI-powered applications, to create innovative solutions that elevate technology and user experience to the next level."
   },
 
 "about-me": {
@@ -22,14 +22,14 @@
   "remote": "Open to work remote",
   "title": "WHO`S MICHAEL?",
   "subline": "About me",
-  "text": "Hi there! I'm Michael, a frontend developer passionate about creating intuitive and efficient digital experiences. With a natural problem-solving mindset and a keen eye for detail, I specialize in transforming complex concepts into visually appealing and functional web solutions.Let’s collaborate and build something remarkable together!",
+  "text": "Hello! I’m Michael, a certified media designer for digital media (IHK) and a frontend developer with a passion for aesthetic and functional designs. My focus is on designing, structuring, and planning modern user interfaces, as well as developing high-quality web solutions. With a keen eye for detail and professional coding skills, I transform complex concepts into intuitive digital experiences. Let’s work together to create innovative projects!",
   "button": "Let`s talk"
   },
 
 "project": {
   "text-craft": "MY CRAFT",
   "headline": "Projects",
-  "text-all": "Take a look at some of my projects and see my front-end skills in action. Each project highlights my approach to building responsive, user-friendly designs with efficient code.",
+  "text-all": "Explore my projects and experience my frontend expertise firsthand. Each project reflects my commitment to crafting responsive, user-friendly designs while ensuring clean, efficient, and high-performance code.",
   "headline-join": "Join",
   "text-join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
   "headline-debugger": "The Debugger",
@@ -43,13 +43,13 @@
 
   "projects": {
     "debugger": {
-      "description": "Jump, run and throw game based on object-oriented approach. Help Michael to find coins and sprays to fight against the crazy bugs.",
-      "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+      "description": "An action-packed Jump ’n’ Run – fully designed, developed, and programmed by me! Jump, run, and throw your way through this object-oriented Jump ’n’ Run adventure. Guide Michael through exciting levels, collect coins, discover power-ups, and use sprays to take on the crazy bugs. A unique gaming experience that combines technical precision with creative game design!",
+      "implementationDetails": "My Jump ’n’ Run – From Concept to Completion, All in One Hand This game is a complete solo project – from the first sketch to the final code. As the developer, designer, and programmer, I created and implemented every element myself. Concept & Design: The game world, characters, and UI were designed by me using Adobe Illustrator and Photoshop, with a strong focus on an appealing style and clear visual language. Development & Programming: The game is built with object-oriented JavaScript and utilizes HTML and CSS for a stable and responsive implementation. Clean, modular code ensures easy maintenance and scalability. Gameplay & Mechanics: I have crafted a smooth and dynamic Jump ’n’ Run experience, combining precise controls, exciting levels, and interactive elements. The goal was to create an engaging and technically refined gaming experience. This project showcases my skills in game design, front-end development, and object-oriented programming – all driven by attention to detail and a commitment to high quality"
     },
 
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "implementationDetails": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way."
+      "implementationDetails": "This project is a modern Kanban system developed with Angular 17, Firebase, and SCSS. It allows for the creation, organization, and management of tasks that can be moved between different status columns via drag and drop. Users can create tasks, assign categories and people, and track the progress of their workflows in real-time. The data is stored in Firestore and automatically synchronized."
     },
 
     "pokedex": {
@@ -90,7 +90,8 @@
   "emailerror": "Hoppla! your email is required",
   "emailplaceholder": "Your name goes here",
   "messageerror": "What do you need to develop?",
-  "messageplaceholder": "Your message goes here"
+  "messageplaceholder": "Your message goes here",
+  "signin": "Your email has been successfully sent"
   },
 
 "detail": {

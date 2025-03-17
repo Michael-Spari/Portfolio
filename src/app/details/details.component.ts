@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from "@ngx-translate/core";
 import { HeaderComponent } from '../shared/header/header.component';
@@ -15,6 +15,7 @@ import { HeaderComponent } from '../shared/header/header.component';
 export class DetailsComponent {
 
   currentProject: any;
+  currentIndex = 0;
 
   projects = [
     {
@@ -50,7 +51,7 @@ export class DetailsComponent {
       image: "assets/img/projects/join.png",
       logo: "Michael Spari - Frontend Developer Michael Spari - Frontend Developer",
       logoImage: "assets/logo/logo_ms_en_over.png",
-      gitHub: "https://github.com/Michael-Spari",
+      gitHub: "https://github.com/Michael-Spari/join",
       liveTest: "join/index.html"
     },
     {
@@ -73,7 +74,13 @@ export class DetailsComponent {
   ];
 
   
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -86,8 +93,6 @@ export class DetailsComponent {
       }
     });
   }
-
-  currentIndex = 0;
 
   nextProject() {
     this.currentIndex = (this.currentIndex + 1) % this.projects.length;

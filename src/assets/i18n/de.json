@@ -16,24 +16,24 @@
     "remote": "Bereit für Remote-Arbeit",
     "title": "WER IST MICHAEL?",
     "subline": "Über mich",
-    "text": "Hallo! Ich bin Michael, ein Frontend-Entwickler, der leidenschaftlich daran interessiert ist, intuitive und effiziente digitale Erlebnisse zu schaffen. Mit einem natürlichen Problemlösungsansatz und einem geschulten Auge für Details habe ich mich darauf spezialisiert, komplexe Konzepte in visuell ansprechende und funktionale Web-Lösungen zu verwandeln. Lass uns zusammenarbeiten und etwas Außergewöhnliches aufbauen!",
+    "text": "Hallo! Ich bin Michael, Mediengestalter für Digitalmedien (IHK) und Frontend-Entwickler mit einer Leidenschaft für ästhetische und funktionale Designs. Mein Fokus liegt auf der Gestaltung, dem Layout und der Planung moderner User Interfaces sowie der Entwicklung hochwertiger Web-Lösungen. Mit einem geschulten Auge für Details und professionellem Coding setze ich komplexe Konzepte in intuitive digitale Erlebnisse um. Lass uns gemeinsam innovative Projekte realisieren!",
     "button": "Lass uns reden"
   },
 
   "skills": {
     "stack": "DEV-SKILLS",
     "title": "Expertise",
-    "text": "Ich habe Erfahrung im Aufbau von Projekten mit einer Vielzahl von Frontend-Technologien und Konzepten gesammelt. Mit einer starken Wachstumsmentalität erkunde ich ständig neue Bereiche, um meine Fähigkeiten zu erweitern."
+    "text": "Ich habe umfangreiche Erfahrung in der Entwicklung von Projekten mit modernen Frontend-Technologien und bewährten Software-Architekturen. Mein Schwerpunkt liegt auf der Gestaltung performanter und benutzerfreundlicher Anwendungen mit einem klaren Blick für Design und Funktionalität. Gleichzeitig beschäftige ich mich intensiv mit zukünftigen Entwicklungen, insbesondere im Bereich KI-gestützter Anwendungen, um innovative Lösungen zu schaffen, die Technologie und Benutzererfahrung auf ein neues Level heben."
   },
 
   "project": {
-    "text-craft": "MEIN HANDWERK",
+    "text-craft": "REFERENZEN",
     "headline": "Projekte",
-    "text-all": "Werfen Sie einen Blick auf einige meiner Projekte und sehen Sie meine Frontend-Fähigkeiten in Aktion. Jedes Projekt hebt meinen Ansatz hervor, responsive, benutzerfreundliche Designs mit effizientem Code zu erstellen.",
+    "text-all": "Tauchen Sie ein in meine Projekte und erleben Sie meine Frontend-Expertise in Aktion. Jedes Projekt zeigt mein Engagement für die Entwicklung responsiver, benutzerfreundlicher Designs mit sauberem, effizientem und leistungsstarkem Code.",
     "headline-join": "Join",
     "text-join": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-    "headline-debugger": "The Debugger",
-    "text-debugger": "Springe, renne und wirf Spiel basierend auf einem objektorientierten Ansatz. Hilf Michael, Münzen und Sprays zu finden, um gegen die Bugs zu kämpfen.",
+    "headline-debugger": "Michael the Debugger",
+    "text-debugger": "Jump & Run Spiel basierend auf einem objektorientierten coding. Hilf Michael the Debugger, Münzen und Sprays zu finden, um gegen die Bugs zu kämpfen.",
     "headline-pokedex": "Pokedex",
     "text-pokedex": "Diese Anwendung ermöglicht es Benutzern, durch die Eingabe eines Pokémon-Namens oder einer Pokédex-Nummer Informationen über verschiedene Pokémon abzurufen.",
     "button-pokedex": "Projekt Details",
@@ -43,13 +43,13 @@
       
   "projects": {
     "debugger": {
-      "description": "Springe, renne und werfe in einem objektorientierten Spiel. Hilf Michael, Münzen zu sammeln und Sprays zu finden, um gegen die verrückten Bugs zu kämpfen.",
-      "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
+      "description": "Ein actiongeladenes Jump ’n’ Run Spiel – komplett von mir designt, entwickelt und programmiert! Springen, rennen, werfen – in diesem objektorientierten Jump ’n’ Run steuern Sie Michael durch spannende Level. Sammeln Sie Münzen, entdecken Sie Power-ups und nutzen Sie Sprays, um sich gegen die chaotischen Bugs zu behaupten. Ein einzigartiges Spielerlebnis, das Technik und kreatives Game-Design vereint!",
+      "implementationDetails": "Mein Jump ’n’ Run – von der Idee bis zur Umsetzung aus einer Hand Dieses Spiel ist ein vollständiges Solo-Projekt – von der ersten Skizze bis zum finalen Code. Als Entwickler, Designer und Programmierer habe ich jedes Element selbst gestaltet und umgesetzt. Konzept & Design: Die Spielwelt, Charaktere und UI wurden von mir in Adobe Illustrator und Photoshop entworfen. Dabei lag der Fokus auf einem ansprechenden Stil und einer klaren visuellen Sprache. Entwicklung & Programmierung: Das Spiel basiert auf objektorientiertem JavaScript und nutzt HTML und CSS für eine stabile und reaktionsschnelle Umsetzung. Sauberer, modularer Code sorgt für eine gute Wartbarkeit und Erweiterbarkeit. Gameplay & Mechanik: Ich habe ein flüssiges Jump ’n’ Run-Erlebnis geschaffen, das präzise Steuerung, spannende Level und interaktive Elemente kombiniert. Ziel war es, ein unterhaltsames und technisch ausgereiftes Spielerlebnis zu bieten. Dieses Projekt vereint meine Fähigkeiten in Game-Design, Frontend-Entwicklung und objektorientierter Programmierung – alles mit Liebe zum Detail und einem hohen Qualitätsanspruch"
     },
 
     "join": {
       "description": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-      "implementationDetails": "Ein kurzer Text, der deine Rolle oder den Arbeitsablauf für dieses spezifische Projekt beschreibt. Lass einen Recruiter mehr über dein Wissen und deine Fähigkeit erfahren, strukturiert unabhängig oder im Team zu arbeiten."
+      "implementationDetails": "Dieses Projekt ist ein modernes Kanban-System, entwickelt mit Angular 17, Firebase und SCSS. Es ermöglicht die Erstellung, Organisation und Verwaltung von Aufgaben, die per Drag & Drop zwischen verschiedenen Status-Spalten verschoben werden können. Benutzer können Aufgaben anlegen, Kategorien und Personen zuweisen sowie den Fortschritt ihrer Workflows in Echtzeit verfolgen. Die Daten werden dabei in Firestore gespeichert und automatisch synchronisiert. Dieses Projekt ist ein modernes Kanban-System, entwickelt mit Angular 17, Firebase und SCSS. Es ermöglicht die Erstellung, Organisation und Verwaltung von Aufgaben, die per Drag & Drop zwischen verschiedenen Status-Spalten verschoben werden können. Benutzer können Aufgaben anlegen, Kategorien und Personen zuweisen sowie den Fortschritt ihrer Workflows in Echtzeit verfolgen. Die Daten werden dabei in Firestore gespeichert und automatisch synchronisiert."
     },
 
     "pokedex": {
@@ -60,7 +60,7 @@
 
   "thoughts": {
     "words": "IN IHREN WORTEN",
-    "headline": "Gedanken der Kollegen",
+    "headline": "Das sagen meine Kollegen",
     "cardOneText": "Michael hat das Team wirklich mit seiner großartigen Organisation und klaren Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
     "cardOneName": "Tobias Lange",
     "cardOnePosition": "Frontend Developer",
@@ -76,7 +76,7 @@
 "contact": {
   "contactMe": "KONTAKTIERE MICH",
   "headline": "Bereit, loszulegen?",
-  "contactText": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und mit meiner Arbeit zu Ihren Projekten beizutragen. Zögern Sie nicht, sich mit den Details Ihres Projekts zu melden. Ich würde mich freuen, die Gelegenheit zu haben, eine Website zu erstellen, die Ihren Anforderungen entspricht!",
+  "contactText": "Ich freue mich darauf, mehr über Ihre Ideen zu erfahren und mit meiner Expertise zu Ihrem Projekt beizutragen. Teilen Sie mir die Details mit – gemeinsam entwickeln wir eine digitale Lösung, die sowohl technisch als auch visuell überzeugt. Ich bin gespannt auf Ihre Nachricht!",
   "name": "Wie lautet Ihr Name?",
   "email": "Wie lautet Ihre E-Mail?",
   "message": "Wie kann ich Ihnen helfen?",
@@ -84,12 +84,13 @@
   "privacyPolicyLink": "Datenschutzerklärung",
   "accept": "Bitte akzeptieren Sie die Datenschutzerklärung",
   "send": "Senden",
-  "nameerror": "Hoppla! Ihr Name fehlt",
+  "nameerror": "Bitte gib deinen Name ein!",
   "nameplaceholder": "Bitte Name eingeben",
-  "emailerror": "Hoppla! Ihre Email wird benötigt",
+  "emailerror": "Bitte gib deine Email-Adresse ein!",
   "emailplaceholder": "Bitte deine Email eingeben",
-  "messageerror": "Hoppla! Ihre Nachricht wird benötigt",
-  "messageplaceholder": "Bitte Nachricht eingeben"
+  "messageerror": "Bitte gib eine Nachricht ein!",
+  "messageplaceholder": "Bitte Nachricht eingeben",
+  "signin": "Deine E-Mail wurde erfolgreich versendet"
   },
 
   "detail": {
@@ -97,7 +98,7 @@
   "description": "Beschreibung",
   "detailheadline": "Implementierungsdetails",
   "duration": "Dauer:",
-  "next": "Nächste Projekt"
+  "next": "Nächstes Projekt"
   },
 
   "imprint": {

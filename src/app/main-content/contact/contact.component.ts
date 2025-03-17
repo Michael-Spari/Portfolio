@@ -10,7 +10,7 @@ import {TranslatePipe} from "@ngx-translate/core";
   standalone: true,
   imports: [CommonModule, FooterComponent, FormsModule, TranslatePipe],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
 
@@ -30,6 +30,8 @@ export class ContactComponent {
 
   isAcceptedPrivacyPolicy: boolean = false;
 
+  showSignin: boolean = false;
+
   post = {
     endPoint: 'https://michaelspari.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -42,21 +44,31 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && this.isAcceptedPrivacyPolicy) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-
-            ngForm.resetForm();
-            this.isAcceptedPrivacyPolicy = false;
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (!this.isAcceptedPrivacyPolicy) {
-      console.error('Privacy policy must be accepted.');
+    if (!ngForm.form.valid) {
+      ngForm.form.markAllAsTouched(); // Markiert alle Felder als "touched"
+      return;
     }
+  
+    if (!this.isAcceptedPrivacyPolicy) {
+      console.error('Die Datenschutzrichtlinie muss akzeptiert werden.');
+      return;
+    }
+  
+    this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      .subscribe({
+        next: (response) => {
+          ngForm.resetForm();
+          this.isAcceptedPrivacyPolicy = false;
+          this.showSignin = true;
+        },
+        error: (error) => {
+          console.error(error);
+        },
+        complete: () => console.info('send post complete'),
+      });
+  }
+
+  hideSignin() {
+    this.showSignin = false;
   }
 }

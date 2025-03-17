@@ -15,12 +15,13 @@ section {
     background-image: url('./../../../assets/img/backgrounds/bg_contact.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-color: #ffffff;
     font-family: 'Bricolage Grotesque';
     padding-top: 100px;
     color: whitesmoke;
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .mainFrame {
@@ -71,6 +72,57 @@ section {
     transition: width 0.1s ease;
     animation: expandWidth 6s infinite;
 }
+
+.sendButton {
+    cursor: pointer;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.whiteCross {
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.signin {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #F87A55;
+    padding: 20px;
+    color: #FFFFFF ;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInUp 1s forwards;
+    display: block;
+    z-index: 10;
+}
+
+.signin.hidden {
+    display: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @keyframes expandWidth {
     0%, 100% {
         width: 0;

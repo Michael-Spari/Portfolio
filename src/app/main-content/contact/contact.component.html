@@ -1,4 +1,10 @@
 <section>
+    <div class="signin" *ngIf="showSignin" (click)="hideSignin()">
+        <img class="whiteCross" src="assets/img/alerts/iconoir_cancel.png" alt="close" />
+        <div class="signinText">
+            <p>{{ 'contact.signin' | translate }}</p>
+    </div>
+    </div>
     <div class="mainFrame">
     <div class="contactMainFrame">
         <div class="leftFrame">
@@ -82,10 +88,10 @@
                             <p>{{ 'contact.accept' | translate }}</p>
                         </div>
                         <div class="sendButton">
-                            <input type="submit" value="{{ 'contact.send' | translate }}" 
+                            <button type="submit" 
                                    class="sendBtn" 
                                    [disabled]="!isAcceptedPrivacyPolicy"
-                                   [ngClass]="{ 'disabledBtn': !isAcceptedPrivacyPolicy }">
+                                   [ngClass]="{ 'disabledBtn': !isAcceptedPrivacyPolicy }">{{ 'contact.send' | translate }}</button>
                         </div>
                         </form>
                     </div>
