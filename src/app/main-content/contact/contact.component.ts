@@ -28,7 +28,7 @@ export class ContactComponent {
 
   mailTest = false;
 
-  isAcceptedPrivacyPolicy: boolean = false;
+  isAcceptedPrivacyPolicy: boolean = true;
 
   showSignin: boolean = false;
 
